@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Brew Haven | Handcrafted Beverages</title>
+    <meta name="description" content="Explore our curated menu of artisanal coffees, refreshing cold brews, wellness blends, and sparkling sodas at Brew Haven.">
+    <link rel="icon" href="../_resources/img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../_components/header.css">
+    <link rel="stylesheet" href="../_components/footer.css">
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ── NAVBAR ─────────────────────────────────────── -->
+    <div id="navbar">
+        <header class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="../home/home.html" class="logo-link">
+                        <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                        <div class="logo-info">
+                            <span class="logo-text">Brew Haven</span>
+                            <span class="logo-slogan">THE CAFE</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <a href="../home/home.html" class="nav-link">Home</a>
+                    <a href="../menu/menu.html" class="nav-link active">Menu</a>
+                    <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
+                    <a href="../about/about.html" class="nav-link">About</a>
+                    <a href="../services/services.html" class="nav-link">Services</a>
+                    <a href="../contact/contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+
+        <!-- ── HERO ───────────────────────────────────── -->
+        <section class="m-hero">
+            <img src="../_resources/img/menu_background.png" alt="Brew Haven cafe interior" class="m-hero__bg">
+            <div class="m-hero__overlay"></div>
+            <div class="m-hero__content">
+                <span class="m-hero__tag">THE ART OF BREWING</span>
+                <h1 class="m-hero__title">Our Curated Menu</h1>
+                <p class="m-hero__sub">Experience the perfect blend of tradition and innovation<br>with our handcrafted beverage selection.</p>
+            </div>
+        </section>
+
+        <!-- ── FILTER BAR ──────────────────────────────── -->
+        <div class="m-filter">
+            <div class="m-filter__inner">
+                <div class="m-filter__pills">
+                    <button class="m-pill active" data-section="hot-beverages">Hot Beverages</button>
+                    <button class="m-pill" data-section="cold-beverages">Cold Beverages</button>
+                    <button class="m-pill" data-section="fresh-juices">Fresh Juices</button>
+                    <button class="m-pill" data-section="wellness-blends">Wellness Blends</button>
+                    <button class="m-pill" data-section="artisan-sodas">Artisan Sodas</button>
+                    <button class="m-pill" data-section="artisan-sodas">Sparkling Infusions</button>
+                </div>
+                <div class="m-filter__search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="menu-search" placeholder="Find a drink...">
+                </div>
+            </div>
+        </div>
+
+        <!-- ── HOT BEVERAGES ───────────────────────────── -->
+        <section class="m-section" id="hot-beverages">
+            <div class="m-wrap">
+                <h2 class="m-section__title">Hot Beverages</h2>
+                <div class="m-grid-4">
+
+                    <!-- Card 1 -->
+                    <div class="m-card">
+                        <div class="m-card__img">
+                            <img src="../_resources/img/Velvet Latte.png" alt="Signature Espresso">
+                            <span class="m-badge m-badge--orange">BESTSELLER</span>
+                        </div>
+                        <div class="m-card__body">
+                            <div class="m-card__row">
+                                <h3 class="m-card__name">Signature Espresso</h3>
+                                <span class="m-card__price">$4.50</span>
+                            </div>
+                            <p class="m-card__desc">Our creamy house blend espresso, with a rich golden crema and bold finish.</p>
+                            <button class="m-add-btn"><i class="fas fa-plus"></i> Add to Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="m-card">
+                        <div class="m-card__img">
+                            <img src="../_resources/img/earl-grey.png" alt="Earl Grey Lavender">
+                        </div>
+                        <div class="m-card__body">
+                            <div class="m-card__row">
+                                <h3 class="m-card__name">Earl Grey Lavender</h3>
+                                <span class="m-card__price">$5.50</span>
+                            </div>
+                            <p class="m-card__desc">Bergamot infused black tea with a delicate hint of Provence lavender.</p>
+                            <button class="m-add-btn"><i class="fas fa-plus"></i> Add to Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="m-card">
+                        <div class="m-card__img">
+                            <img src="../_resources/img/classic_dark.png" alt="Classic Dark Cocoa">
+                        </div>
+                        <div class="m-card__body">
+                            <div class="m-card__row">
+                                <h3 class="m-card__name">Classic Dark Cocoa</h3>
+                                <span class="m-card__price">$5.00</span>
+                            </div>
+                            <p class="m-card__desc">70% dark Belgian cocoa steamed with silky whole milk, rich and indulgent.</p>
+                            <button class="m-add-btn"><i class="fas fa-plus"></i> Add to Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="m-card">
+                        <div class="m-card__img">
+                            <img src="../_resources/img/Hojicha.png" alt="Hojicha Latte">
+                        </div>
+                        <div class="m-card__body">
+                            <div class="m-card__row">
+                                <h3 class="m-card__name">Hojicha Latte</h3>
+                                <span class="m-card__price">$6.00</span>
+                            </div>
+                            <p class="m-card__desc">Gently roasted Japanese green tea with notes of toasted walnut.</p>
+                            <button class="m-add-btn"><i class="fas fa-plus"></i> Add to Order</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── COLD BEVERAGES ──────────────────────────── -->
+        <section class="m-section" id="cold-beverages">
+            <div class="m-wrap">
+                <h2 class="m-section__title">Cold Beverages</h2>
+                <div class="m-grid-5">
+
+                    <!-- Card 1 -->
+                    <div class="m-card m-card--sm">
+                        <div class="m-card__img m-card__img--sm">
+                            <img src="../_resources/img/Gold Brew Reserve.png" alt="Cold Brew Vanilla">
+                        </div>
+                        <div class="m-card__body m-card__body--sm">
+                            <h3 class="m-card__name">Cold Brew Vanilla</h3>
+                            <div class="m-card__meta">
+                                <span class="m-tag">COLD</span>
+                                <span class="m-card__price">$5.25</span>
+                            </div>
+                            <button class="m-add-btn m-add-btn--sm">Add to Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="m-card m-card--sm">
+                        <div class="m-card__img m-card__img--sm">
+                            <img src="../_resources/img/Mango_Smoothy.png" alt="Mango Smoothie">
+                        </div>
+                        <div class="m-card__body m-card__body--sm">
+                            <h3 class="m-card__name">Mango Smoothie</h3>
+                            <div class="m-card__meta">
+                                <span class="m-tag">FRESH FRUIT</span>
+                                <span class="m-card__price">$5.00</span>
+                            </div>
+                            <button class="m-add-btn m-add-btn--sm">Add to Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="m-card m-card--sm">
+                        <div class="m-card__img m-card__img--sm">
+                            <img src="../_resources/img/Caramel_Milkshake.png" alt="Caramel Milkshake">
+                            <span class="m-badge m-badge--yellow">POPULAR</span>
+                        </div>
+                        <div class="m-card__body m-card__body--sm">
+                            <h3 class="m-card__name">Caramel Milkshake</h3>
+                            <div class="m-card__meta">
+                                <span class="m-tag">ULTRA THICK</span>
+                                <span class="m-card__price">$7.00</span>
+                            </div>
+                            <button class="m-add-btn m-add-btn--sm">Add to Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="m-card m-card--sm">
+                        <div class="m-card__img m-card__img--sm">
+                            <img src="../_resources/img/Nitro-Cold-Brew.png" alt="Nitro Cold Brew">
+                        </div>
+                        <div class="m-card__body m-card__body--sm">
+                            <h3 class="m-card__name">Nitro Cold Brew</h3>
+                            <div class="m-card__meta">
+                                <span class="m-tag">ON TAP</span>
+                                <span class="m-card__price">$5.50</span>
+                            </div>
+                            <button class="m-add-btn m-add-btn--sm">Add to Order</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="m-card m-card--sm">
+                        <div class="m-card__img m-card__img--sm">
+                            <img src="../_resources/img/Caramel_Frappe.png" alt="Caramel Frappe">
+                        </div>
+                        <div class="m-card__body m-card__body--sm">
+                            <h3 class="m-card__name">Caramel Frappe</h3>
+                            <div class="m-card__meta">
+                                <span class="m-tag">ICE BLENDED</span>
+                                <span class="m-card__price">$6.25</span>
+                            </div>
+                            <button class="m-add-btn m-add-btn--sm">Add to Order</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── FRESH JUICES + WELLNESS ─────────────────── -->
+        <section class="m-section m-section--split" id="fresh-juices">
+            <div class="m-wrap">
+                <div class="m-split">
+
+                    <!-- Left: Fresh Juices -->
+                    <div class="m-split__left">
+                        <h2 class="m-section__title">Fresh Juices</h2>
+                        <div class="m-juice-list">
+
+                            <div class="m-juice">
+                                <img src="../_resources/img/Orange_Zest.png" alt="Orange Zest">
+                                <div class="m-juice__info">
+                                    <div class="m-juice__top">
+                                        <h3>Orange Zest</h3>
+                                        <span class="m-card__price">$5.50</span>
+                                    </div>
+                                    <p>100% cold-pressed Valencia oranges with a hint of citrus zest and fresh ginger.</p>
+                                </div>
+                            </div>
+
+                            <div class="m-juice">
+                                <img src="../_resources/img/green-juice.png" alt="Green Detox">
+                                <div class="m-juice__info">
+                                    <div class="m-juice__top">
+                                        <h3>Green Detox</h3>
+                                        <span class="m-card__price">$5.50</span>
+                                    </div>
+                                    <p>Cucumber, green apple, kale, celery, and a touch of organic lemon.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right: Wellness Blends -->
+                    <div class="m-split__right" id="wellness-blends">
+                        <h2 class="m-section__title">Wellness Blends</h2>
+                        <div class="m-wellness-grid">
+
+                            <div class="m-wellness" style="background-image:url('../_resources/img/Turmeric.png')">
+                                <div class="m-wellness__overlay"></div>
+                                <div class="m-wellness__text">
+                                    <h3>Turmeric Glow</h3>
+                                    <p>Anti-inflammatory blend</p>
+                                </div>
+                            </div>
+
+                            <div class="m-wellness" style="background-image:url('../_resources/img/Beetroot_berry.png')">
+                                <div class="m-wellness__overlay"></div>
+                                <div class="m-wellness__text">
+                                    <h3>Beetroot Berry</h3>
+                                    <p>Energy &amp; antioxidants</p>
+                                </div>
+                            </div>
+
+                            <div class="m-wellness" style="background-image:url('../_resources/img/Matcha_detox.png')">
+                                <div class="m-wellness__overlay"></div>
+                                <div class="m-wellness__text">
+                                    <h3>Matcha Relax</h3>
+                                    <p>L-Theanine calming focus</p>
+                                </div>
+                            </div>
+
+                            <div class="m-wellness" style="background-image:url('../_resources/img/Glow_Berry.png')">
+                                <div class="m-wellness__overlay"></div>
+                                <div class="m-wellness__text">
+                                    <h3>Glow Berry</h3>
+                                    <p>Collagen support blend</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── ARTISAN SODAS ───────────────────────────── -->
+        <section class="m-section" id="artisan-sodas">
+            <div class="m-wrap">
+                <h2 class="m-section__title">Artisan Sodas &amp; Sparkling</h2>
+                <div class="m-artisan-grid">
+
+                    <div class="m-artisan">
+                        <div class="m-artisan__img">
+                            <img src="../_resources/img/Sparkling.png" alt="Sparkling Elderflower">
+                        </div>
+                        <h3 class="m-artisan__name">Sparkling Elderflower</h3>
+                        <span class="m-card__price">$6.00</span>
+                    </div>
+
+                    <div class="m-artisan">
+                        <div class="m-artisan__img">
+                            <img src="../_resources/img/Spiced_Hibiscus_Fizz.png" alt="Spiced Hibiscus Fizz">
+                        </div>
+                        <h3 class="m-artisan__name">Spiced Hibiscus Fizz</h3>
+                        <span class="m-card__price">$6.50</span>
+                    </div>
+
+                    <div class="m-artisan">
+                        <div class="m-artisan__img">
+                            <img src="../_resources/img/Lavender_Lemon_Fizz.png" alt="Lavender Lemon Fizz">
+                        </div>
+                        <h3 class="m-artisan__name">Lavender Lemon Fizz</h3>
+                        <span class="m-card__price">$5.50</span>
+                    </div>
+
+                    <div class="m-artisan">
+                        <div class="m-artisan__img">
+                            <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=500&q=80" alt="Peach Basil Sparkler">
+                        </div>
+                        <h3 class="m-artisan__name">Peach Basil Sparkler</h3>
+                        <span class="m-card__price">$6.25</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── FOOTER ──────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                    <span>Brew Haven</span>
+                </div>
+                <p>Dedicated to the art of fine beverages and the community that drinks them. Visit us for a daily dose of serenity.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../about/about.html">About Us</a></li>
+                    <li><a href="../contact/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>CONTACT US</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-location-dot"></i> 123 Brew Lane, Portland, OR</li>
+                    <li><i class="fas fa-phone"></i> 555-0199</li>
+                    <li><i class="fas fa-envelope"></i> hello@brewhaven.com</li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>NEWSLETTER</h4>
+                <p>Never miss exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brew Haven. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>

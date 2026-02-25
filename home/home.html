@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven | The Art of Conscious Sipping</title>
+    <link rel="icon" href="../_resources/img/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../_components/header.css">
+    <link rel="stylesheet" href="../_components/footer.css">
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <header class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="../home/home.html" class="logo-link">
+                        <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                        <div class="logo-info">
+                            <span class="logo-text">Brew Haven</span>
+                            <span class="logo-slogan">THE CAFE</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <a href="../home/home.html" class="nav-link active">Home</a>
+                    <a href="../menu/menu.html" class="nav-link">Menu</a>
+                    <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
+                    <a href="../about/about.html" class="nav-link">About</a>
+                    <a href="../services/services.html" class="nav-link">Services</a>
+                    <a href="../contact/contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="../_resources/img/coffee shop interior.png" alt="Brew Haven Interior">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-tag">ARTISANAL REFRESHMENT</span>
+                <h1>The Art of<br><i>Conscious</i><br>Sipping</h1>
+                <p class="hero-subtitle">Where Every Sip Tells A Story</p>
+                <div class="hero-btns">
+                    <a href="../menu/menu.html" class="btn btn-primary">View Menu</a>
+                    <a href="../about/about.html" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="section-container featured-products">
+            <div class="section-header-flex">
+                <div>
+                    <span class="section-tag" style="letter-spacing: 0.1em; font-weight: 800;">OUR FAVORITES</span>
+                    <h2 class="section-title">FEATURED PRODUCTS</h2>
+                </div>
+                <a href="../menu/menu.html" class="link-more">Explore All Drinks &rarr;</a>
+            </div>
+            <div class="grid-3">
+                <!-- Product 1 -->
+                <div class="card">
+                    <div class="badge">Best Seller</div>
+                    <div class="card-img-container">
+                        <img src="../_resources/img/Caramel Macchiato.png" class="card-img"
+                            alt="Signature Caramel Macchiato">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Signature Caramel Macchiato</h3>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p>Rich espresso with velvety steamed milk and buttery caramel.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../_resources/img/Velvet Latte.png" class="card-img" alt="Classic Velvet Latte">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Classic Velvet Latte</h3>
+                            <span class="price">$4.75</span>
+                        </div>
+                        <p>Smooth espresso blended with silk-textured milk for a creamy finish.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../_resources/img/Cold Brew.png" class="card-img" alt="Gold Brew Reserve">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Cold Brew Reserve</h3>
+                            <span class="price">$5.25</span>
+                        </div>
+                        <p>Smooth, 24-hour steeped coffee served over ice for maximum flavor.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="card">
+                    <div class="badge">New</div>
+                    <div class="card-img-container">
+                        <img src="../_resources/img/Signature Matcha Cake.png" class="card-img"
+                            alt="Special Hibiscus Water">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Signature Matcha Cake</h3>
+                            <span class="price">$6.50</span>
+                        </div>
+                        <p>Refreshing hibiscus brewed with a touch of honey and mint.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../_resources/img/spiced-hibiscus.png" class="card-img"
+                            alt="Brew Haven Nitro Cold Brew">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Special Hibiscus Water</h3>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p>Velvety smooth cold brew infused with nitrogen for a rich, creamy head.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../_resources/img/Nitro-Cold-Brew.png" class="card-img" alt="Signature Matcha Latte">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Nitro Cold Brew With Foam</h3>
+                            <span class="price">$5.75</span>
+                        </div>
+                        <p>Ceremonial grade matcha whisked with your choice of milk.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section-container testimonials">
+            <div class="section-center-header">
+                <span class="section-tag">TESTIMONIALS</span>
+                <h2 class="section-title">WHAT OUR COMMUNITY SAYS</h2>
+            </div>
+            <div class="grid-3">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The Caramel Macchiato is easily the best I've ever had. Brew Haven has become my daily morning
+                        ritual."</p>
+                    <span class="author">— SARAH JENKINS</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Their Velvet Latte is exceptionally smooth. It's the perfect spot for deep work and quiet
+                        thinking."</p>
+                    <span class="author">— MICHAEL CHEN</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Friendly baristas and a really warm neighborhood vibe. The Cold Brew is a total game changer."
+                    </p>
+                    <span class="author">— EMMA RODRIGUEZ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="section-container offers">
+            <div class="section-center-header">
+                <span class="section-tag">LIMITED TIME</span>
+                <h2 class="section-title">SPECIAL OFFERS</h2>
+            </div>
+            <div class="grid-3">
+                <div class="offer-card">
+                    <img src="../_resources/img/Pumpkin.png" alt="Seasonal Pumpkin Spice">
+                    <div class="offer-info">
+                        <h3>Seasonal Pumpkin Spice</h3>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="../_resources/img/Baker's Choice Deal.png" alt="Artisan Pastry Trio">
+                    <div class="offer-info">
+                        <h3>Artisan Pastry Trio</h3>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="../_resources/img/Haven Loyalty Program.png" alt="Brew Haven Cold Brew">
+                    <div class="offer-info">
+                        <h3>Brew Haven Cold Brew</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seasonal Favorites -->
+        <section class="section-container seasonal">
+            <div class="section-center-header">
+                <span class="section-tag">FRESH FOR THE SEASON</span>
+                <h2 class="section-title">SEASONAL FAVORITES</h2>
+                <p>Enjoy our limited series of seasonal drinks crafted for you.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../_resources/img/green-juice.png" class="card-img" alt="Matcha Detox Juice">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Matcha Detox Juice</h3>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p>Pure matcha with cucumber and lime for a refreshing detox.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../_resources/img/spiced-hibiscus.png" class="card-img" alt="Hibiscus Bloom">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Hibiscus Bloom</h3>
+                            <span class="price">$5.25</span>
+                        </div>
+                        <p>Sweet hibiscus with a hint of rose and fresh berries.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../_resources/img/Nitro-Cold-Brew.png" class="card-img" alt="Nitro Cold Brew">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3>Honey Infused Nitro Brew</h3>
+                            <span class="price">$5.75</span>
+                        </div>
+                        <p>Nitro cold brew with a subtle hint of wildflower honey.</p>
+                        <button class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community & Gatherings -->
+        <section class="section-container community">
+            <div class="grid-2-custom">
+                <div>
+                    <span class="section-tag" style="letter-spacing: 0.2em;">LOCAL CULTURE</span>
+                    <h2 class="section-title">Community & Gatherings</h2>
+                </div>
+                <p class="community-desc">Join us for acoustic sets, cupping sessions, and tasting workshops that
+                    celebrate the local craft scene.</p>
+            </div>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-img-wrapper">
+                        <img src="../_resources/img/tasting_workshop.png" alt="Tasting Workshop">
+                    </div>
+                    <h3>TASTING WORKSHOP</h3>
+                    <span class="community-subtitle">EVERY FIRST THURSDAY</span>
+                </div>
+                <div class="community-card">
+                    <div class="community-img-wrapper">
+                        <img src="../_resources/img/acoustic-set.png" alt="Evening Acoustic Sets">
+                    </div>
+                    <h3>EVENING ACOUSTIC SETS</h3>
+                    <span class="community-subtitle">FRIDAY & SATURDAY NIGHTS</span>
+                </div>
+                <div class="community-card">
+                    <div class="community-img-wrapper">
+                        <img src="../_resources/img/artisian-market.png" alt="Maker's Market">
+                    </div>
+                    <h3>MAKER'S MARKET</h3>
+                    <span class="community-subtitle">MONTHLY CURATED POPUP</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find Your Comfort Spot -->
+        <section class="section-container comfort">
+            <div class="section-center-header">
+                <span class="section-tag">TAKE A SEAT</span>
+                <h2 class="section-title">Find Your Comfort Spot</h2>
+            </div>
+            <div class="gallery-grid">
+                <img src="../_resources/img/Spot1.png" alt="Interior spot 1" class="gallery-img">
+                <img src="../_resources/img/Spot2.png" alt="Interior spot 2" class="gallery-img">
+                <img src="../_resources/img/Spot3.png" alt="Interior spot 3" class="gallery-img">
+                <img src="../_resources/img/Spot4.png" alt="Exterior spot" class="gallery-img">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                    <span>Brew Haven</span>
+                </div>
+                <p>Crafting the perfect cup since 2018. Your local sanctuary for coffee lovers and dreamers alike.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../about/about.html">About Us</a></li>
+                    <li><a href="../contact/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>CONTACT US</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-location-dot"></i> 123 Brew Lane, Portland, OR</li>
+                    <li><i class="fas fa-phone"></i> 555-0199</li>
+                    <li><i class="fas fa-envelope"></i> hello@brewhaven.com</li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe for exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brew Haven. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

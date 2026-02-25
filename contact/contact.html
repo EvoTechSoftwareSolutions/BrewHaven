@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Brew Haven</title>
+    <meta name="description" content="Get in touch with Brew Haven — we'd love to hear from you.">
+    <link rel="icon" href="../_resources/img/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../_components/header.css">
+    <link rel="stylesheet" href="../_components/footer.css">
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary: #D17842;
+            --primary-dark: #b5612e;
+            --dark: #1a1a1a;
+            --gray: #777;
+            --gray-light: #aaa;
+            --light: #f9f9f9;
+            --border: #e8e8e8;
+        }
+
+        body {
+            background: #fafafa;
+        }
+
+        .page-coming {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .page-coming span {
+            display: inline-block;
+            background: #FFF2EB;
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-size: 0.85rem;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-bottom: 24px;
+        }
+
+        .page-coming h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--dark);
+            margin-bottom: 16px;
+        }
+
+        .page-coming p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--gray);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .contact-info-item i {
+            width: 42px;
+            height: 42px;
+            background: #FFF2EB;
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <header class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="../home/home.html" class="logo-link">
+                        <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                        <div class="logo-info">
+                            <span class="logo-text">Brew Haven</span>
+                            <span class="logo-slogan">THE CAFE</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <a href="../home/home.html" class="nav-link">Home</a>
+                    <a href="../menu/menu.html" class="nav-link">Menu</a>
+                    <a href="../gallery/gallery.html" class="nav-link">Gallery</a>
+                    <a href="../about/about.html" class="nav-link">About</a>
+                    <a href="../services/services.html" class="nav-link">Services</a>
+                    <a href="../contact/contact.html" class="nav-link active">Contact</a>
+                </nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="page-coming">
+            <span>REACH OUT</span>
+            <h1>Contact Us</h1>
+            <p>We're always happy to hear from you. Find us in-store or reach out through any of the channels below.</p>
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fas fa-location-dot"></i>
+                    <span>123 Brew Lane, Portland, OR</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>555-0199</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@brewhaven.com</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                    <span>Brew Haven</span>
+                </div>
+                <p>Crafting the perfect cup since 2018. Your local sanctuary for coffee lovers and dreamers alike.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="../menu/menu.html">Menu</a></li>
+                    <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../about/about.html">About Us</a></li>
+                    <li><a href="../contact/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>CONTACT US</h4>
+                <ul class="contact-list">
+                    <li><i class="fas fa-location-dot"></i> 123 Brew Lane, Portland, OR</li>
+                    <li><i class="fas fa-phone"></i> 555-0199</li>
+                    <li><i class="fas fa-envelope"></i> hello@brewhaven.com</li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe for exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brew Haven. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
