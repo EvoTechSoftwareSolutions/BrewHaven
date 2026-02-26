@@ -1,21 +1,20 @@
 :root {
-    --primary: #D17842;
-    --primary-dark: #b5612e;
-    --dark: #1a1a1a;
-    --dark-bg: #14110F;
-    --gray: #777;
-    --gray-light: #aaa;
-    --light: #f9f9f9;
-    --border: #e8e8e8;
+    --primary: #cf6317;
+    --primary-dark: #a85212;
+    --background-light: #f8f7f6;
+    --background-dark: #211811;
+    --text-main: #181411;
+    --text-muted: #887263;
     --white: #ffffff;
 }
 
 body {
-    background: var(--white);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--dark);
+    background-color: var(--background-light);
+    color: var(--text-main);
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease;
 }
 
 .container {
@@ -31,11 +30,11 @@ body {
 }
 
 .services-hero h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     font-weight: 900;
-    margin-bottom: 25px;
-    color: var(--dark);
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-bottom: 24px;
+    color: var(--text-main);
+    letter-spacing: -1px;
 }
 
 .services-hero h1 span {
@@ -43,62 +42,73 @@ body {
 }
 
 .services-hero p {
-    color: var(--gray);
-    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-size: 1.15rem;
     max-width: 700px;
     margin: 0 auto;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 /* Services Grid */
 .services-section {
-    padding: 80px 0;
+    padding: 60px 0 100px;
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 30px;
 }
 
 .service-card {
-    background: #fff;
-    padding: 35px;
+    background: var(--white);
+    padding: 40px 30px;
     border-radius: 12px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid rgba(207, 99, 23, 0.1);
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-align: left;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+    border-color: rgba(207, 99, 23, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
 
 .service-icon {
     background: #FDF0E6;
-    color: var(--primary);
-    width: 42px;
-    height: 42px;
+    color: #D17842;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.service-icon i {
+    font-size: 1.2rem;
 }
 
 .service-card h3 {
     font-size: 1.25rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: var(--dark);
+    font-weight: 850;
+    margin-bottom: 16px;
+    color: var(--text-main);
     line-height: 1.3;
 }
 
 .service-card p {
-    color: #666;
+    color: var(--text-muted);
     font-size: 0.85rem;
     line-height: 1.8;
     margin: 0;
@@ -111,10 +121,10 @@ body {
 
 .cta-box {
     background: var(--primary);
-    border-radius: 24px;
-    padding: 90px 40px;
+    border-radius: 20px;
+    padding: 80px 40px;
     text-align: center;
-    color: #fff;
+    color: var(--white);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -124,114 +134,79 @@ body {
 .cta-box::after {
     content: '';
     position: absolute;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     z-index: -1;
 }
 
 .cta-box::before {
-    width: 350px;
-    height: 350px;
-    top: -100px;
-    left: -120px;
+    width: 320px;
+    height: 320px;
+    top: -160px;
+    left: -160px;
 }
 
 .cta-box::after {
-    width: 280px;
-    height: 280px;
-    bottom: -120px;
-    right: -80px;
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    right: -100px;
 }
 
 .cta-box h2 {
-    font-size: 3.2rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    letter-spacing: -1px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 16px;
 }
 
 .cta-box p {
     font-size: 1.1rem;
     opacity: 0.9;
-    margin-bottom: 40px;
-    max-width: 500px;
+    margin-bottom: 32px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .cta-buttons {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     justify-content: center;
 }
 
 .btn-cta {
-    padding: 16px 35px;
+    padding: 12px 32px;
     border-radius: 8px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .btn-cta.primary {
-    background: #fff;
+    background: var(--white);
     color: var(--primary);
 }
 
 .btn-cta.secondary {
     background: transparent;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .btn-cta.primary:hover {
-    background: #f8f8f8;
+    background: var(--background-light);
     transform: translateY(-3px);
 }
 
 .btn-cta.secondary:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
-    border-color: #fff;
+    border-color: var(--white);
 }
 
-/* Footer Overrides */
-.footer-logo img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-.footer-brand p {
-    font-size: 0.9rem;
-    color: #888;
-}
-
-.footer-logo span {
-    font-weight: 800;
-    color: #333;
-}
-
-.newsletter-form input {
-    background: #f8f8f8 !important;
-    border: none !important;
-    padding: 18px !important;
-    border-radius: 8px !important;
-}
-
-.btn-subscribe {
-    border-radius: 8px !important;
-}
-
-.social-icon {
-    background: var(--primary) !important;
-    width: 38px !important;
-    height: 38px !important;
-    font-size: 0.9rem !important;
-}
-
-@media (max-width: 1100px) {
+/* Responsive */
+@media (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -239,7 +214,7 @@ body {
 
 @media (max-width: 768px) {
     .services-hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .services-grid {
@@ -247,7 +222,7 @@ body {
     }
 
     .cta-box h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .cta-buttons {
@@ -257,6 +232,6 @@ body {
 
     .btn-cta {
         width: 100%;
-        max-width: 250px;
+        max-width: 280px;
     }
 }
