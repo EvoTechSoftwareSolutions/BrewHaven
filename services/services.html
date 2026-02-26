@@ -7,66 +7,14 @@
     <title>Services | Brew Haven</title>
     <meta name="description"
         content="Discover the services we offer at Brew Haven — catering, workshops, private events, and more.">
-    <link rel="icon" href="../_resources/img/logo.png" type="image/png">
+    <link rel="icon" href="../_resources/common/logo.png" type="image/png">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../_components/header.css">
     <link rel="stylesheet" href="../_components/footer.css">
     <link rel="stylesheet" href="../home/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        :root {
-            --primary: #D17842;
-            --primary-dark: #b5612e;
-            --dark: #1a1a1a;
-            --gray: #777;
-            --gray-light: #aaa;
-            --light: #f9f9f9;
-            --border: #e8e8e8;
-        }
-
-        body {
-            background: #fafafa;
-        }
-
-        .page-coming {
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .page-coming span {
-            display: inline-block;
-            background: #FFF2EB;
-            color: var(--primary);
-            font-weight: 700;
-            letter-spacing: 3px;
-            font-size: 0.85rem;
-            padding: 8px 20px;
-            border-radius: 50px;
-            margin-bottom: 24px;
-        }
-
-        .page-coming h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: var(--dark);
-            margin-bottom: 16px;
-        }
-
-        .page-coming p {
-            color: var(--gray);
-            font-size: 1.1rem;
-            max-width: 500px;
-            line-height: 1.7;
-        }
-    </style>
+    <link rel="stylesheet" href="services.css">
 </head>
 
 <body>
@@ -76,7 +24,7 @@
             <div class="navbar-container">
                 <div class="logo">
                     <a href="../home/home.html" class="logo-link">
-                        <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                        <img src="../_resources/common/logo.png" alt="Brew Haven Logo">
                         <div class="logo-info">
                             <span class="logo-text">Brew Haven</span>
                             <span class="logo-slogan">THE CAFE</span>
@@ -101,21 +49,87 @@
     </div>
 
     <main>
-        <div class="page-coming">
-            <span>WHAT WE OFFER</span>
-            <h1>Services</h1>
-            <p>From corporate catering to tasting workshops and private events — we're building this page with care.</p>
-        </div>
+        <!-- Hero Section -->
+        <section class="services-hero">
+            <div class="container">
+                <h1>Our <span>Services</span></h1>
+                <p>Experience the warmth and quality of Brew Haven's curated offerings. We blend traditional
+                    craftsmanship with modern convenience.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h3>Artisanal<br>Refreshment</h3>
+                        <p>Explore our handcrafted selection of premium coffees, organic teas, and freshly squeezed
+                            juices, all prepared with precision.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3>Quick Takeaway</h3>
+                        <p>In a hurry? Grab any of our signature beverages to go in our efficient, eco-friendly
+                            packaging
+                            designed for your busy lifestyle.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <h3>Cafe Sanctuary</h3>
+                        <p>Sip your favorite drink in our cozy space with high-speed WiFi, making us the perfect retreat
+                            for work, study, or relaxation.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Premium Sourcing</h3>
+                        <p>We pride ourselves on using only the finest ingredients, from ethically sourced beans and tea
+                            leaves to the freshest seasonal fruits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Ready for a cup?</h2>
+                    <p>Join us today for the best specialty coffee experience in town.</p>
+                    <div class="cta-buttons">
+                        <a href="../menu/menu.html" class="btn-cta primary">View Our Menu</a>
+                        <a href="../contact/contact.html" class="btn-cta secondary">Find Location</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                    <img src="../_resources/common/logo.png" alt="Brew Haven Logo">
                     <span>Brew Haven</span>
                 </div>
-                <p>Crafting the perfect cup since 2018. Your local sanctuary for coffee lovers and dreamers alike.</p>
+                <p>Dedicated to the art of fine beverages and the community that drinks them. Visit us for a daily dose
+                    of serenity.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -135,14 +149,14 @@
             <div class="footer-links-col">
                 <h4>CONTACT US</h4>
                 <ul class="contact-list">
-                    <li><i class="fas fa-location-dot"></i> 123 Brew Lane, Portland, OR</li>
+                    <li><i class="fas fa-location-dot"></i> 123 Brew Lane, Coffee District Portland, OR 97201</li>
                     <li><i class="fas fa-phone"></i> 555-0199</li>
                     <li><i class="fas fa-envelope"></i> hello@brewhaven.com</li>
                 </ul>
             </div>
             <div class="footer-links-col">
                 <h4>NEWSLETTER</h4>
-                <p>Subscribe for exclusive offers.</p>
+                <p>Subscribe for exclusive offers and coffee tips.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address">
                     <button type="submit" class="btn-subscribe">Subscribe</button>
@@ -154,6 +168,7 @@
             <div class="footer-legal">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
+                <a href="#">Cookies</a>
             </div>
         </div>
     </footer>
