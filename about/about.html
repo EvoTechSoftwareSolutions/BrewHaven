@@ -7,66 +7,15 @@
     <title>About | Brew Haven</title>
     <meta name="description"
         content="Learn the story behind Brew Haven — our mission, values, and the team that makes it happen.">
-    <link rel="icon" href="../_resources/img/logo.png" type="image/png">
+    <link rel="icon" href="../_resources/common/logo.png" type="image/png">
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../_components/header.css">
     <link rel="stylesheet" href="../_components/footer.css">
     <link rel="stylesheet" href="../home/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        :root {
-            --primary: #D17842;
-            --primary-dark: #b5612e;
-            --dark: #1a1a1a;
-            --gray: #777;
-            --gray-light: #aaa;
-            --light: #f9f9f9;
-            --border: #e8e8e8;
-        }
-
-        body {
-            background: #fafafa;
-        }
-
-        .page-coming {
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .page-coming span {
-            display: inline-block;
-            background: #FFF2EB;
-            color: var(--primary);
-            font-weight: 700;
-            letter-spacing: 3px;
-            font-size: 0.85rem;
-            padding: 8px 20px;
-            border-radius: 50px;
-            margin-bottom: 24px;
-        }
-
-        .page-coming h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: var(--dark);
-            margin-bottom: 16px;
-        }
-
-        .page-coming p {
-            color: var(--gray);
-            font-size: 1.1rem;
-            max-width: 500px;
-            line-height: 1.7;
-        }
-    </style>
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
@@ -76,7 +25,7 @@
             <div class="navbar-container">
                 <div class="logo">
                     <a href="../home/home.html" class="logo-link">
-                        <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                        <img src="../_resources/common/logo.png" alt="Brew Haven Logo">
                         <div class="logo-info">
                             <span class="logo-text">Brew Haven</span>
                             <span class="logo-slogan">THE CAFE</span>
@@ -101,18 +50,182 @@
     </div>
 
     <main>
-        <div class="page-coming">
-            <span>OUR STORY</span>
-            <h1>About Us</h1>
-            <p>The story of Brew Haven is one of passion, community, and the perfect cup. More coming soon.</p>
-        </div>
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <span class="section-tag" style="color: #D17842; font-weight: 700; opacity: 1;">EST. 2010</span>
+                    <h1>Crafting Moments<br>One Sip at a Time</h1>
+                    <p>Discover an artisanal journey through premium coffees, fine teas, and fresh-pressed juices in our
+                        welcoming sanctuary.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="about-story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-text">
+                        <span class="section-tag">OUR STORY</span>
+                        <h2>Your Daily Retreat</h2>
+                        <p>Our journey began in 2010 with a simple mission: to bring the
+                            finest artisanal coffee to our local community. What started
+                            as a small passion project in a humble corner of the city has
+                            grown into a beloved sanctuary for coffee lovers.</p>
+                        <p>Every bean is sourced with meticulous care from sustainable
+                            farms across the globe. We believe that the process is just
+                            as important as the result, which is why every pour at Brew
+                            Haven is treated as a unique work of art.</p>
+                        <p>Over the decade, we haven't just served coffee; we've built a
+                            home for thinkers, dreamers, and early risers. Our walls have
+                            heard countless stories, and we're honored to be a part of
+                            yours.</p>
+                        <a href="../menu/menu.html" class="learn-more">Read our full history <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="story-image">
+                        <img src="../_resources/about/daily_retreat.png" alt="Latte Art Pouring">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-quote-stats">
+            <div class="container">
+                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                <h2>"Quality ingredients. Shared moments. We believe the perfect beverage is the foundation of a
+                    stronger community."</h2>
+                <div class="mission-label">
+                    <span class="divider"></span>
+                    <span class="label-text">OUR MISSION STATEMENT</span>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Sustainable</h4>
+                        <p>Ethically sourced beans from certified fair-trade farms.</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Community</h4>
+                        <p>A space designed for connection and conversation.</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Curated Selection</h4>
+                        <p>From master-roasted coffee to hand-picked teas and cold-pressed juices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Harvest Section -->
+        <section class="about-harvest">
+            <div class="container">
+                <div class="harvest-grid">
+                    <div class="harvest-image">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=800&auto=format&fit=crop"
+                            alt="Fresh Harvest Fruits">
+                    </div>
+                    <div class="harvest-text">
+                        <span class="harvest-pill">FARM TO CUP</span>
+                        <h2>Seasonal Harvest</h2>
+                        <p>The soul of our smoothies and infusions lies in the seasons. We partner with local orchards
+                            to
+                            source peak-ripeness berries, heirloom citrus, and aromatic herbs like Thai basil and garden
+                            mint.</p>
+                        <ul class="harvest-list">
+                            <li><i class="fas fa-circle-check"></i> Hand-picked organic produce</li>
+                            <li><i class="fas fa-circle-check"></i> Zero artificial sweeteners or syrups</li>
+                            <li><i class="fas fa-circle-check"></i> Rotating monthly specialty infusions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="about-values">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 60px;">
+                    <span class="section-tag">BEHIND THE BAR</span>
+                    <h2>The Art of the Craft</h2>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-mug-hot"></i></div>
+                        <div class="value-content">
+                            <h3>Precision Brewing</h3>
+                            <p>From pour-overs to cold brews, we calibrate every variable—grind size, water temperature,
+                                and
+                                extraction time—to highlight each bean's unique profile.</p>
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-temperature-half"></i></div>
+                        <div class="value-content">
+                            <h3>Steeping Mastery</h3>
+                            <p>Our whole-leaf teas are steeped at precise temperatures to unlock delicate floral notes
+                                and
+                                deep earthy undertones without bitterness.</p>
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-bottle-droplet"></i></div>
+                        <div class="value-content">
+                            <h3>Cold-Pressed Purity</h3>
+                            <p>Our juices are hydraulic-pressed to retain maximum nutrients and enzymes, delivering
+                                vibrant flavors in every refreshing drop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Sanctuary Section -->
+        <section class="about-sanctuary">
+            <div class="container">
+                <div class="sanctuary-grid">
+                    <div class="sanctuary-images">
+                        <img src="../_resources/about/coffee seeds.png" alt="Coffee Beans" class="img-beans">
+                        <img src="../_resources/about/coffeecup.png" alt="Coffee Cup" class="img-cup">
+                        <img src="../_resources/about/windowlight.png" alt="Window Light" class="img-light">
+                        <img src="../_resources/about/interior.png" alt="Cafe Interior" class="img-interior">
+                    </div>
+                    <div class="sanctuary-text">
+                        <span class="section-tag" style="display: none;">ATMOSPHERE</span>
+                        <h2>Experience the Sanctuary</h2>
+                        <p>Beyond the beverage, Brew Haven offers an<br> atmosphere that invites you to slow down. Whether
+                            you're here for<br> your morning ritual or an afternoon escape, our space is tailored for<br> your
+                            comfort.</p>
+                        <div class="sanctuary-feature">
+                            <div class="feature-icon-box"><i class="fas fa-wifi"></i></div>
+                            <div class="feature-info">
+                                <h4>High-Speed Connectivity</h4>
+                                <p>Perfect for those who work while they sip.</p>
+                            </div>
+                        </div>
+                        <div class="sanctuary-feature">
+                            <div class="feature-icon-box"><i class="fas fa-calendar-days"></i></div>
+                            <div class="feature-info">
+                                <h4>Community Events</h4>
+                                <p>Live acoustic sets and monthly coffee tastings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                    <img src="../_resources/common/logo.png" alt="Brew Haven Logo">
                     <span>Brew Haven</span>
                 </div>
                 <p>Crafting the perfect cup since 2018. Your local sanctuary for coffee lovers and dreamers alike.</p>
@@ -123,7 +236,7 @@
                 </div>
             </div>
             <div class="footer-links-col">
-                <h4>QUICK LINKS</h4>
+                <h4>ABOUT US</h4>
                 <ul class="footer-links">
                     <li><a href="../home/home.html">Home</a></li>
                     <li><a href="../menu/menu.html">Menu</a></li>
@@ -141,11 +254,11 @@
                 </ul>
             </div>
             <div class="footer-links-col">
-                <h4>NEWSLETTER</h4>
+                <h4>STAY UPDATED</h4>
                 <p>Subscribe for exclusive offers.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Your email address">
-                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                    <button type="submit" class="btn-subscribe">Sign Up</button>
                 </form>
             </div>
         </div>
