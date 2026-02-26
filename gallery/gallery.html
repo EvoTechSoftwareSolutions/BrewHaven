@@ -6,66 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Brew Haven</title>
     <meta name="description" content="Explore the Brew Haven gallery — our drinks, space, and community moments.">
-    <link rel="icon" href="../_resources/img/logo.png" type="image/png">
+    <link rel="icon" href="../_resources/common/logo.png" type="image/png">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../_components/header.css">
     <link rel="stylesheet" href="../_components/footer.css">
     <link rel="stylesheet" href="../home/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        :root {
-            --primary: #D17842;
-            --primary-dark: #b5612e;
-            --dark: #1a1a1a;
-            --gray: #777;
-            --gray-light: #aaa;
-            --light: #f9f9f9;
-            --border: #e8e8e8;
-        }
-
-        body {
-            background: #fafafa;
-        }
-
-        .page-coming {
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .page-coming span {
-            display: inline-block;
-            background: #FFF2EB;
-            color: var(--primary);
-            font-weight: 700;
-            letter-spacing: 3px;
-            font-size: 0.85rem;
-            padding: 8px 20px;
-            border-radius: 50px;
-            margin-bottom: 24px;
-        }
-
-        .page-coming h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: var(--dark);
-            margin-bottom: 16px;
-        }
-
-        .page-coming p {
-            color: var(--gray);
-            font-size: 1.1rem;
-            max-width: 500px;
-            line-height: 1.7;
-        }
-    </style>
+    <link rel="stylesheet" href="gallery.css">
 </head>
 
 <body>
@@ -75,7 +23,7 @@
             <div class="navbar-container">
                 <div class="logo">
                     <a href="../home/home.html" class="logo-link">
-                        <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                        <img src="../_resources/common/logo.png" alt="Brew Haven Logo">
                         <div class="logo-info">
                             <span class="logo-text">Brew Haven</span>
                             <span class="logo-slogan">THE CAFE</span>
@@ -100,18 +48,93 @@
     </div>
 
     <main>
-        <div class="page-coming">
-            <span>COMING SOON</span>
-            <h1>Gallery</h1>
-            <p>We're curating our most beautiful moments. Check back soon to explore the sights of Brew Haven.</p>
-        </div>
+        <section class="gallery-hero">
+            <div class="gallery-container">
+                <h1>Our Craft in <span>Frames</span></h1>
+                <p>A visual journey through the heart of Brew Haven, from the roasting of the
+                    finest beans to the final pour of our signature lattes.</p>
+            </div>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="gallery-filters">
+            <div class="gallery-container">
+                <div class="filter-pills">
+                    <button class="filter-pill active" data-filter="all">All</button>
+                    <button class="filter-pill" data-filter="coffee">Our Coffee</button>
+                    <button class="filter-pill" data-filter="seasonal">Seasonal Brews</button>
+                    <button class="filter-pill" data-filter="shop">The Shop</button>
+                    <button class="filter-pill" data-filter="craft">Craftsmanship</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid Section -->
+        <section class="gallery-grid-section">
+            <div class="gallery-container">
+                <div class="gallery-masonry">
+                    <div class="gallery-item" data-category="coffee">
+                        <img src="../_resources/gallery/image1.png" alt="Latte Art Close Up">
+                    </div>
+                    <div class="gallery-item" data-category="seasonal">
+                        <img src="../_resources/gallery/image2.png" alt="Pouring Iced Coffee">
+                    </div>
+                    <div class="gallery-item" data-category="craft">
+                        <img src="../_resources/gallery/image3.png" alt="Espresso Machine Steam">
+                    </div>
+                    <div class="gallery-item" data-category="shop">
+                        <img src="../_resources/gallery/image4.png" alt="Cafe Interior Rustic">
+                    </div>
+                    <div class="gallery-item gallery-item--wide" data-category="coffee">
+                        <img src="../_resources/gallery/image5.png" alt="Coffee Bean Sacks">
+                    </div>
+                    <div class="gallery-item" data-category="shop">
+                        <img src="../_resources/gallery/image6.png" alt="Minimalist Pendant Lights">
+                    </div>
+                    <div class="gallery-item gallery-item--wide" data-category="craft">
+                        <img src="../_resources/gallery/image7.png" alt="Coffee Grinders Row">
+                    </div>
+                    <div class="gallery-item" data-category="seasonal">
+                        <img src="../_resources/gallery/image8.png" alt="Matcha Whisk">
+                    </div>
+                    <div class="gallery-item" data-category="seasonal">
+                        <img src="../_resources/gallery/image9.png" alt="Fresh Orange Juice">
+                    </div>
+                    <div class="gallery-item" data-category="shop">
+                        <img src="../_resources/gallery/image10.png" alt="Cafe Atmosphere">
+                    </div>
+                    <div class="gallery-item" data-category="shop">
+                        <img src="../_resources/gallery/image11.png" alt="Modern Cafe Counter">
+                    </div>
+                    <div class="gallery-item" data-category="craft">
+                        <img src="../_resources/gallery/image12.png" alt="Barista Craftsmanship">
+                    </div>
+                    <div class="gallery-item" data-category="coffee">
+                        <img src="../_resources/gallery/image13.png" alt="Coffee Cup Atmosphere">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="gallery-cta">
+            <div class="cta-card">
+                <h2>Experience it in person</h2>
+                <p>Visit one of our locations to taste the craftsmanship for yourself. Join us for a cup of excellence.
+                </p>
+                <div class="cta-buttons">
+                    <a href="../menu/menu.html" class="btn btn-primary">View Menu</a>
+                    <a href="../contact/contact.html" class="btn btn-secondary">Find a Location</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="../_resources/img/logo.png" alt="Brew Haven Logo">
+                    <img src="../_resources/common/logo.png" alt="Brew Haven Logo">
                     <span>Brew Haven</span>
                 </div>
                 <p>Crafting the perfect cup since 2018. Your local sanctuary for coffee lovers and dreamers alike.</p>
@@ -143,8 +166,10 @@
                 <h4>NEWSLETTER</h4>
                 <p>Subscribe for exclusive offers.</p>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address">
-                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                    <input type="email" placeholder="Your email address"
+                        style="border: 1px solid var(--border); border-radius: 8px; padding: 12px;">
+                    <button type="submit" class="btn-subscribe"
+                        style="background: var(--primary); color: white; border: none; border-radius: 8px; padding: 12px; font-weight: 700; cursor: pointer; margin-top: 10px;">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
@@ -158,11 +183,45 @@
     </footer>
 
     <script>
-        const menu = document.querySelector('#mobile-menu');
-        const menuLinks = document.querySelector('.nav-links');
-        menu.addEventListener('click', function () {
-            menu.classList.toggle('is-active');
-            menuLinks.classList.toggle('active');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const menu = document.querySelector('#mobile-menu');
+            const menuLinks = document.querySelector('.nav-links');
+            menu.addEventListener('click', function () {
+                menu.classList.toggle('is-active');
+                menuLinks.classList.toggle('active');
+            });
+
+            // Gallery Filtering
+            const filterButtons = document.querySelectorAll('.filter-pill');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'inline-block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.9)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
         });
     </script>
 </body>
