@@ -1,7 +1,8 @@
 /* Main hero header for the menu page */
 .m-hero {
+
     position: relative;
-    height: 260px;
+    height: 400px;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
@@ -71,7 +72,7 @@
 /* Sticky filter bar at top of page */
 .m-filter {
     position: sticky;
-    top: 0;
+    top: 98px;
     z-index: 200;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
@@ -122,6 +123,16 @@
     background-color: #D1641E;
     border-color: #D1641E;
     color: #ffffff;
+}
+
+/* Centered row of filter buttons */
+.filter-pills {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Search input container in filter bar */
@@ -604,7 +615,7 @@
     }
 
     .m-hero {
-        height: 200px;
+        height: 300px;
     }
 
     .m-hero__content {

@@ -1,21 +1,30 @@
-/* Main footer area with background and padding */
+/* Main footer layout and appearance */
 .footer {
-    padding: 80px 40px 40px;
-    border-top: 1px solid #f8f8f8;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f8f8f8;
     background-color: #ffffff;
     color: #333333;
 }
 
-/* Grid layout for footer columns */
+/* Four-column grid structure for desktop */
 .footer-grid {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-    gap: 40px;
+    column-gap: 40px;
+    row-gap: 40px;
 }
 
-/* Paragraph styling in the brand column */
+/* Slogan and brand description styling */
 .footer-brand p {
     color: #a5b4c1;
     line-height: 1.6;
@@ -24,15 +33,16 @@
     font-size: 14px;
 }
 
-/* Container for logo and site title */
+/* Logo and brand name alignment */
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    column-gap: 12px;
+    row-gap: 12px;
     margin-bottom: 30px;
 }
 
-/* Footer logo text font and color */
+/* Brand name text style */
 .footer-logo span {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
@@ -41,21 +51,25 @@
     color: #2c1e1a;
 }
 
-/* Round logo image in footer */
+/* Circular logo image sizing */
 .footer-logo img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     object-fit: cover;
 }
 
-/* Social icons container */
+/* Horizontal social media links container */
 .social-links {
     display: flex;
-    gap: 12px;
+    column-gap: 12px;
+    row-gap: 12px;
 }
 
-/* Circular social icon style */
+/* Primary orange circle for social icons */
 .social-icon {
     width: 34px;
     height: 34px;
@@ -63,22 +77,27 @@
     align-items: center;
     justify-content: center;
     background-color: #D1641E;
-    /* BrewHaven Brand Primary */
     color: #ffffff;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-decoration-line: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
     font-size: 14px;
     box-shadow: 0px 4px 8px rgba(209, 100, 30, 0.3);
 }
 
-/* Lift icons slightly on hover */
+/* Move icons up when hovered */
 .social-icon:hover {
     transform: translateY(-2px);
     box-shadow: 0px 6px 12px rgba(209, 100, 30, 0.4);
 }
 
-/* Column headers in the footer */
+/* Capitalized section titles in footer */
 .footer-links-col h4 {
     font-size: 13px;
     font-weight: 800;
@@ -88,111 +107,156 @@
     text-transform: uppercase;
 }
 
-/* Reset for footer navigation lists */
+/* Remove bullets from list navigation */
 .footer-links {
     list-style-type: none;
-    padding: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-/* Spacing between footer list items */
+/* Vertical spacing for menu items */
 .footer-links li {
     margin-bottom: 12px;
 }
 
-/* Footer link color and hover transition */
+/* Gray style for footer links */
 .footer-links a {
     color: #999999;
-    text-decoration: none;
+    text-decoration-line: none;
     font-size: 13px;
-    transition: color 0.3s ease;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
-/* Change link color on hover */
+/* Orange color when hovering links */
 .footer-links a:hover {
     color: #D1641E;
 }
 
-/* Reset for contact info list */
+/* List of contact details */
 .contact-list {
     list-style-type: none;
-    padding: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-/* Individual contact item layout */
+/* Icon and text horizontal alignment */
 .contact-list li {
     display: flex;
-    gap: 15px;
+    column-gap: 15px;
+    row-gap: 15px;
     margin-bottom: 18px;
     color: #999999;
     font-size: 13px;
     line-height: 1.4;
 }
 
-/* Email/Phone icon color */
+/* Orange symbols for address and phone */
 .contact-list i {
     color: #D1641E;
     font-size: 14px;
     margin-top: 2px;
 }
 
-/* Container for newsletter inputs */
+/* Vertical newsletter subscription layout */
 .newsletter-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    column-gap: 15px;
+    row-gap: 15px;
     align-items: flex-start;
 }
 
-/* Newsletter section description */
+/* Prompt text for newsletter */
 .newsletter-form p {
     color: #999999;
     font-size: 13px;
     margin-bottom: 5px;
 }
 
-/* Email input box styling */
+/* Gray input box for email entries */
 .newsletter-form input {
     width: 100%;
-    padding: 14px 20px;
-    border: 1px solid #f0f0f0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f0f0f0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #f0f0f0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #f0f0f0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #f0f0f0;
     background-color: #fcfcfc;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     outline: none;
     font-size: 13px;
     color: #333333;
 }
 
-/* Fade out placeholder text */
+/* Light gray placeholder text */
 .newsletter-form input::placeholder {
     color: #cccccc;
 }
 
-/* Subscribe button background and shadow */
+/* Solid orange button with shadow */
 .btn-subscribe {
     background-color: #D1641E;
     color: #ffffff;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     font-weight: 700;
     font-size: 13px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
     box-shadow: 0px 4px 10px rgba(209, 100, 30, 0.2);
 }
 
-/* Darken button on hover */
+/* Hover feedback for main button */
 .btn-subscribe:hover {
     background-color: #b05318;
     transform: translateY(-1px);
 }
 
-/* Divider and content for bottom legal area */
+/* Divider line and copyright row */
 .footer-bottom {
     max-width: 1200px;
-    margin: 60px auto 0;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
-    border-top: 1px solid #f8f8f8;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f8f8f8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,84 +264,230 @@
     color: #cccccc;
 }
 
-/* Privacy and terms links */
+/* Horizontal group for legal links */
 .footer-legal {
     display: flex;
-    gap: 25px;
+    column-gap: 25px;
+    row-gap: 25px;
 }
 
-/* Legal link color and hover */
+/* Gray style for policy links */
 .footer-legal a {
     color: #cccccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    text-decoration-line: none;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
-/* Darken legal link on hover */
+/* Slight darken when hovering policies */
 .footer-legal a:hover {
     color: #999999;
 }
 
-/* Collapse footer grid to 2 columns on tablet */
+/* Tablet refinements for grid and spacing */
 @media (max-width: 1024px) {
+    .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 50px;
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .footer-links-col:nth-child(4) {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .footer-links-col:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .footer-links-col:nth-child(3) {
+        grid-column: 2 / 3;
+        grid-row: 2;
     }
 }
 
-/* Stack footer elements vertically on mobile */
+/* Mobile stack with side-by-side links */
 @media (max-width: 768px) {
+
+    /* Explicit padding for mobile footer */
     .footer {
-        padding: 60px 20px 40px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
     }
 
+    /* Balanced 2-column grid for mobile */
     .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 50px;
+        text-align: center;
     }
 
-    /* Center brand content on mobile */
+    /* Brand takes up first top row totally */
     .footer-brand {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
-    /* Center newsletter form on mobile */
-    .newsletter-form {
-        align-items: center;
-        text-align: center;
+    /* Middle sections stay side by side */
+    .footer-links-col:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
-    /* Center brand paragraph on mobile */
-    .footer-brand p {
-        margin: 0 auto;
+    .footer-links-col:nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
-    /* Center logo on mobile */
+    /* Newsletter takes up bottom row totally */
+    .footer-links-col:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+    }
+
+    /* Center brand components */
     .footer-logo {
         justify-content: center;
+        margin-bottom: 25px;
     }
 
-    /* Center social links on mobile */
-    .social-links {
-        justify-content: center;
+    /* Centered description without tight width */
+    .footer-brand p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 300px;
     }
 
-    /* Center contact list items on mobile */
+    /* Header and column alignment */
+    .footer-links-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Centered lists with no padding */
+    .footer-links,
+    .contact-list {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    /* Column titles centered */
+    .footer-links-col h4 {
+        margin-bottom: 15px;
+        text-align: center;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    /* Stack list items vertically to save horizontal space */
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    /* Vertical stack for contact icon and info */
     .contact-list li {
         justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        column-gap: 5px;
+        row-gap: 5px;
+        margin-bottom: 20px;
     }
 
-    /* Stack bottom footer content on mobile */
-    .footer-bottom {
+    /* Center social media links */
+    .social-links {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    /* Refined newsletter form for better mobile display */
+    .newsletter-form {
+        display: flex;
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    /* Center newsletter description paragraph */
+    .newsletter-form p {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    /* Full width input and button for easy mobile interaction */
+    .newsletter-form input {
+        width: 100%;
         text-align: center;
     }
 
-    /* Center legal links on mobile */
+    /* Large tap-friendly subscribe button */
+    .btn-subscribe {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    /* Legal info centered at bottom */
+    .footer-bottom {
+        flex-direction: column;
+        column-gap: 20px;
+        row-gap: 20px;
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 25px;
+    }
+
+    /* Horizontal list for legal links */
     .footer-legal {
+        display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        row-gap: 10px;
     }
 }

@@ -3,8 +3,7 @@ body {
     background-color: #ffffff;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #1a1a1a;
-    margin: 0;
-    padding: 0;
+    /* Removed padding: 0 to allow global header-spacing to work */
 }
 
 /* Centered container with side padding */
@@ -16,7 +15,7 @@ body {
 
 /* Header section for gallery page title */
 .gallery-hero {
-    padding: 40px 0;
+    padding: 120px 0 60px;
     text-align: left;
 }
 
@@ -57,8 +56,8 @@ body {
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
-    margin-top: -20px;
-    margin-bottom: -30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Rounded button style for filters */
@@ -203,29 +202,99 @@ body {
     transform: translateY(-2px);
 }
 
-/* Switch to two columns on tablet */
+/* Tablet refinements (keeping it like desktop but center-aligned) */
 @media (max-width: 992px) {
-    .gallery-masonry {
-        grid-template-columns: repeat(2, 1fr);
+
+    /* Center the hero text for tablet and ensure it's below fixed header */
+    .gallery-hero {
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 40px;
     }
 
+    /* Keep the three-column layout from desktop */
+    .gallery-masonry {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    /* Keep wide items spanning across two columns */
     .gallery-item.gallery-item--wide {
-        grid-column: span 1;
+        grid-column-start: span 2;
+        grid-column-end: span 2;
     }
 }
 
-/* Single column stack for mobile devices */
+/* Mobile refinements (ensuring topics are seen) */
 @media (max-width: 768px) {
+
+    /* Center the hero headline and description with extra top clearance */
+    .gallery-hero {
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 30px;
+    }
+
+    .gallery-hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Maintain a readable title font size */
     .gallery-hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.1rem;
+        margin-top: 0px;
+        margin-bottom: 15px;
     }
 
+    /* Make the topics (filters) sticky so they aren't missed */
+    .gallery-filters {
+        position: sticky;
+        top: 98px;
+        z-index: 500;
+        background-color: #ffffff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #eeeeee;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Keep the three-column grid active on small screens */
     .gallery-masonry {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
     }
 
+    /* Ensure wide items still span two columns on mobile */
+    .gallery-item.gallery-item--wide {
+        grid-column-start: span 2;
+        grid-column-end: span 2;
+    }
+
+    /* Adjust card height so they fit better in 3 columns on mobile */
+    .gallery-item {
+        height: 180px;
+    }
+
+    /* Stack buttons for easier clicking on phones */
     .cta-buttons {
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        row-gap: 15px;
+        column-gap: 15px;
+        align-items: center;
+    }
+
+    /* Buttons take full width on mobile */
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
     }
 }

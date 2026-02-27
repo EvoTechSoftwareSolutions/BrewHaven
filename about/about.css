@@ -4,7 +4,6 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #1a1a1a;
     margin: 0;
-    padding: 0;
 }
 
 /* Centered content wrapper with side padding */
@@ -555,6 +554,11 @@ body {
     .values-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    /* Add padding to section tags for better spacing on tablet */
+    .section-tag {
+        padding-top: 20px;
+    }
 }
 
 /* Responsive fixes for handheld devices */
@@ -572,5 +576,10 @@ body {
     .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    /* Add padding to section tags for better spacing on mobile */
+    .section-tag {
+        padding-top: 20px;
     }
 }

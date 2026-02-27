@@ -4,16 +4,18 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    padding-top: 0px;
+    padding-top: 98px;
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
 }
 
-/* Sticky navigation bar at the top */
+/* Fixed navigation bar at the top */
 header.navbar {
-    position: sticky;
+    position: fixed;
     top: 0px;
+    left: 0px;
+    width: 100%;
     z-index: 1000;
     margin: 0;
     padding-top: 20px;
@@ -161,6 +163,10 @@ header.navbar {
         background-color: #F8F7F6;
         box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
         transition: 0.4s ease;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
     }
 
     .nav-links.active {
