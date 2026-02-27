@@ -1,24 +1,4 @@
-/* ============================================================
-   menu.css  —  Brew Haven Menu Page
-   Layered on top of: header.css, footer.css, home.css
-   ============================================================ */
-
-:root {
-    --primary: #D1641E;
-    --primary-lt: #FCEEE6;
-    --primary-dk: #b05318;
-    --dark: #2c1e1a;
-    --gray: #666;
-    --gray-lt: #999;
-    --light: #F8F7F6;
-    --border: #eeeeee;
-    --white: #fff;
-    --radius: 10px;
-    --shadow: 0 4px 20px rgba(0, 0, 0, .06);
-    --ease: all .28s cubic-bezier(.4, 0, .2, 1);
-}
-
-/* ── HERO ──────────────────────────────────────────────────── */
+/* Main hero header for the menu page */
 .m-hero {
     position: relative;
     height: 260px;
@@ -27,6 +7,7 @@
     align-items: flex-end;
 }
 
+/* Hero background image sizing */
 .m-hero__bg {
     position: absolute;
     inset: 0;
@@ -36,26 +17,29 @@
     object-position: center 40%;
 }
 
+/* Gradient overlay to darken background for text */
 .m-hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right,
+    background-image: linear-gradient(to right,
             rgba(20, 12, 8, .72) 0%,
             rgba(20, 12, 8, .35) 60%,
             rgba(20, 12, 8, .15) 100%);
 }
 
+/* Floating content inside the hero section */
 .m-hero__content {
     position: relative;
     z-index: 2;
     padding: 0 60px 36px;
-    color: var(--white);
+    color: #ffffff;
 }
 
+/* Small orange tag over hero title */
 .m-hero__tag {
     display: inline-block;
-    background: var(--primary);
-    color: var(--white);
+    background-color: #D1641E;
+    color: #ffffff;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 9px;
     font-weight: 800;
@@ -66,34 +50,35 @@
     margin-bottom: 10px;
 }
 
+/* Main title of the menu hero */
 .m-hero__title {
     font-family: 'Playfair Display', serif;
     font-size: 2.6rem;
     font-weight: 700;
     line-height: 1.1;
-    margin: 0 0 8px;
-    color: var(--white);
-    text-transform: none;
+    margin-bottom: 8px;
+    color: #ffffff;
 }
 
+/* Description text in the menu hero */
 .m-hero__sub {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .82rem;
     line-height: 1.55;
     color: rgba(255, 255, 255, .80);
-    margin: 0;
 }
 
-/* ── FILTER BAR ─────────────────────────────────────────────── */
+/* Sticky filter bar at top of page */
 .m-filter {
     position: sticky;
     top: 0;
     z-index: 200;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, .06);
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, .06);
 }
 
+/* Internal layout for filter bar elements */
 .m-filter__inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -104,158 +89,173 @@
     gap: 20px;
 }
 
+/* Flex row for menu category filter pills */
 .m-filter__pills {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
 }
 
+/* Individual category selection button */
 .m-pill {
     padding: 7px 16px;
     border-radius: 50px;
-    border: 1.5px solid #ddd;
-    background: var(--white);
-    color: var(--gray);
+    border: 1.5px solid #dddddd;
+    background-color: #ffffff;
+    color: #666666;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .78rem;
     font-weight: 600;
     cursor: pointer;
-    transition: var(--ease);
+    transition: all 0.28s cubic-bezier(.4, 0, .2, 1);
     white-space: nowrap;
 }
 
+/* Orange border on pill hover */
 .m-pill:hover {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: #D1641E;
+    color: #D1641E;
 }
 
+/* Active state for selected filter pill */
 .m-pill.active {
-    background: var(--primary);
-    border-color: var(--primary);
-    color: var(--white);
+    background-color: #D1641E;
+    border-color: #D1641E;
+    color: #ffffff;
 }
 
+/* Search input container in filter bar */
 .m-filter__search {
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 1.5px solid #ddd;
+    border: 1.5px solid #dddddd;
     border-radius: 50px;
     padding: 7px 16px;
-    background: var(--white);
+    background-color: #ffffff;
     min-width: 180px;
-    transition: var(--ease);
+    transition: all 0.28s cubic-bezier(.4, 0, .2, 1);
 }
 
+/* Highlight search box when active */
 .m-filter__search:focus-within {
-    border-color: var(--primary);
+    border-color: #D1641E;
 }
 
+/* Search icon color */
 .m-filter__search i {
-    color: var(--gray-lt);
+    color: #999999;
     font-size: .8rem;
 }
 
+/* Reset for the actual search input field */
 .m-filter__search input {
     border: none;
     outline: none;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .8rem;
-    color: var(--dark);
-    background: transparent;
+    color: #2c1e1a;
+    background-color: transparent;
     width: 100%;
 }
 
+/* Fade out search placeholder text */
 .m-filter__search input::placeholder {
-    color: #bbb;
+    color: #bbbbbb;
 }
 
-/* ── SECTION WRAPPER ────────────────────────────────────────── */
+/* Global wrapper for body content */
 .m-wrap {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
+/* Vertical section container for categories */
 .m-section {
     padding: 48px 0 40px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #eeeeee;
 }
 
+/* Remove bottom border on final section */
 .m-section:last-of-type {
     border-bottom: none;
 }
 
+/* Title for each menu category section */
 .m-section__title {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--dark);
-    margin: 0 0 24px;
-    text-transform: none;
+    color: #2c1e1a;
+    margin-bottom: 24px;
     line-height: 1.2;
 }
 
-/* ── 4-COLUMN GRID (Hot Beverages) ─────────────────────────── */
+/* Main 4-column display for items */
 .m-grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-/* ── 5-COLUMN GRID (Cold Beverages) ────────────────────────── */
+/* Denser 5-column display for small items */
 .m-grid-5 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
 }
 
-/* ── MENU CARD ──────────────────────────────────────────────── */
+/* Product display card block */
 .m-card {
-    background: var(--white);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, .06);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform .28s ease, box-shadow .28s ease;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
+/* Lift and highlight card on hover */
 .m-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, .10);
+    box-shadow: 0px 12px 32px rgba(0, 0, 0, .10);
 }
 
-/* Image block */
+/* Top image block in product card */
 .m-card__img {
     position: relative;
     width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    background: #f0ebe6;
+    background-color: #f0ebe6;
 }
 
+/* Fit product image to its holder */
 .m-card__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 
+/* Zoom effect for image on card hover */
 .m-card:hover .m-card__img img {
     transform: scale(1.05);
 }
 
-/* Body */
+/* Main text area for product details */
 .m-card__body {
-    padding: 14px 14px 14px;
+    padding: 14px;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
+/* Top row in product card for title and price */
 .m-card__row {
     display: flex;
     align-items: flex-start;
@@ -263,41 +263,41 @@
     gap: 8px;
 }
 
+/* Bold name for the product */
 .m-card__name {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .92rem;
     font-weight: 800;
-    color: var(--dark);
-    margin: 0;
+    color: #2c1e1a;
     line-height: 1.25;
-    text-transform: none;
 }
 
+/* Orange highlighted price text */
 .m-card__price {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .88rem;
     font-weight: 800;
-    color: var(--primary);
+    color: #D1641E;
     white-space: nowrap;
 }
 
+/* Small muted description of the product */
 .m-card__desc {
     font-size: .76rem;
-    color: var(--gray);
+    color: #666666;
     line-height: 1.55;
-    margin: 0;
     flex: 1;
 }
 
-/* Add to order button (large cards) */
+/* Footer button to add product to order */
 .m-add-btn {
     margin-top: auto;
     width: 100%;
     padding: 9px 0;
-    border: 1.5px solid var(--primary);
+    border: 1.5px solid #D1641E;
     border-radius: 7px;
-    background: transparent;
-    color: var(--primary);
+    background-color: transparent;
+    color: #D1641E;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .76rem;
     font-weight: 700;
@@ -306,56 +306,62 @@
     align-items: center;
     justify-content: center;
     gap: 6px;
-    transition: var(--ease);
+    transition: all 0.28s cubic-bezier(.4, 0, .2, 1);
 }
 
+/* Fill button on hover */
 .m-add-btn:hover {
-    background: var(--primary);
-    color: var(--white);
+    background-color: #D1641E;
+    color: #ffffff;
 }
 
-/* ── SMALL CARD (Cold Beverages) ────────────────────────────── */
+/* Smaller version of the menu card */
 .m-card--sm {
     border-radius: 8px;
 }
 
+/* Square image container for small cards */
 .m-card__img--sm {
     aspect-ratio: 1 / 1;
 }
 
+/* Tighter padding for small card body */
 .m-card__body--sm {
-    padding: 10px 10px 10px;
+    padding: 10px;
     gap: 6px;
 }
 
+/* Sizing for names on small cards */
 .m-card__body--sm .m-card__name {
     font-size: .82rem;
     margin-bottom: 2px;
 }
 
+/* Layout for meta info at bottom of card */
 .m-card__meta {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Tiny uppercase label for extra info */
 .m-tag {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .62rem;
     font-weight: 800;
-    color: var(--gray-lt);
+    color: #999999;
     letter-spacing: .06em;
     text-transform: uppercase;
 }
 
-/* Small add button */
+/* Tighter padding for small card buttons */
 .m-add-btn--sm {
     padding: 7px 0;
     font-size: .72rem;
     border-radius: 6px;
 }
 
-/* ── BADGES ─────────────────────────────────────────────────── */
+/* Pin/tag floating over product image */
 .m-badge {
     position: absolute;
     top: 10px;
@@ -370,21 +376,24 @@
     z-index: 5;
 }
 
+/* Orange primary badge color */
 .m-badge--orange {
-    background: var(--primary);
-    color: var(--white);
+    background-color: #D1641E;
+    color: #ffffff;
 }
 
+/* Yellow secondary badge color */
 .m-badge--yellow {
-    background: #f5a623;
-    color: var(--white);
+    background-color: #f5a623;
+    color: #ffffff;
 }
 
-/* ── FRESH JUICES + WELLNESS (split layout) ─────────────────── */
+/* Section with side-by-side components */
 .m-section--split {
     padding-top: 48px;
 }
 
+/* Flexible grid for split page content */
 .m-split {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -392,41 +401,47 @@
     align-items: start;
 }
 
+/* Vertical stack for juice item list */
 .m-juice-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+/* Horizontal display for a single juice item */
 .m-juice {
     display: flex;
     gap: 16px;
     align-items: center;
-    background: var(--white);
-    border-radius: var(--radius);
+    background-color: #ffffff;
+    border-radius: 10px;
     padding: 14px;
-    box-shadow: var(--shadow);
-    transition: transform .25s ease;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, .06);
+    transition: transform 0.25s ease;
 }
 
+/* Shift juice item up when hovered */
 .m-juice:hover {
     transform: translateY(-2px);
 }
 
+/* Square thumbnail for juice items */
 .m-juice img {
     width: 72px;
     height: 72px;
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
-    background: #f0ebe6;
+    background-color: #f0ebe6;
 }
 
+/* Content block in juice items */
 .m-juice__info {
     flex: 1;
     min-width: 0;
 }
 
+/* Label and title alignment in juice items */
 .m-juice__top {
     display: flex;
     justify-content: space-between;
@@ -434,29 +449,29 @@
     margin-bottom: 4px;
 }
 
+/* Name of the juice item */
 .m-juice__top h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .88rem;
     font-weight: 800;
-    color: var(--dark);
-    margin: 0;
-    text-transform: none;
+    color: #2c1e1a;
 }
 
+/* Description of the juice item ingredients */
 .m-juice__info p {
     font-size: .74rem;
-    color: var(--gray);
+    color: #666666;
     line-height: 1.5;
-    margin: 0;
 }
 
-/* Wellness 2×2 grid */
+/* Grid for wellness items with overlays */
 .m-wellness-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
 }
 
+/* Background image card for wellness category */
 .m-wellness {
     position: relative;
     height: 130px;
@@ -467,80 +482,85 @@
     cursor: default;
 }
 
+/* Tinted overlay at bottom of wellness cards */
 .m-wellness__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, .65) 0%, rgba(0, 0, 0, .1) 55%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .65) 0%, rgba(0, 0, 0, .1) 55%);
 }
 
+/* Bottom aligned text in wellness cards */
 .m-wellness__text {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     padding: 10px 12px;
-    color: var(--white);
+    color: #ffffff;
 }
 
+/* Category name in wellness card */
 .m-wellness__text h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .83rem;
     font-weight: 800;
-    margin: 0 0 2px;
-    text-transform: none;
-    color: var(--white);
+    margin-bottom: 2px;
+    color: #ffffff;
 }
 
+/* Description subtext in wellness card */
 .m-wellness__text p {
     font-size: .68rem;
     color: rgba(255, 255, 255, .80);
-    margin: 0;
 }
 
-/* ── ARTISAN SODAS ──────────────────────────────────────────── */
+/* Grid layout for artisanal features */
 .m-artisan-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
+/* Simple block for handcrafted items */
 .m-artisan {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Vertical portrait container for artisan imagery */
 .m-artisan__img {
     width: 100%;
     aspect-ratio: 3 / 4;
     overflow: hidden;
-    border-radius: var(--radius);
-    background: #f0ebe6;
+    border-radius: 10px;
+    background-color: #f0ebe6;
 }
 
+/* Fit artisanal image to its frame */
 .m-artisan__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 
+/* Zoom image when artisan item is hovered */
 .m-artisan:hover .m-artisan__img img {
     transform: scale(1.05);
 }
 
+/* Bold name for handcrafted menu items */
 .m-artisan__name {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: .88rem;
     font-weight: 800;
-    color: var(--dark);
-    margin: 0;
-    text-transform: none;
+    color: #2c1e1a;
     line-height: 1.3;
 }
 
-/* ── RESPONSIVE ─────────────────────────────────────────────── */
+/* Reduce columns to 2 or 3 on tablet view */
 @media (max-width: 1100px) {
     .m-grid-5 {
         grid-template-columns: repeat(3, 1fr);
@@ -555,6 +575,7 @@
     }
 }
 
+/* Single column stack for main layouts on tablet */
 @media (max-width: 900px) {
     .m-split {
         grid-template-columns: 1fr;
@@ -566,7 +587,9 @@
     }
 
     .m-hero__content {
-        padding: 0 30px 28px;
+        padding-bottom: 28px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .m-hero__title {
@@ -574,9 +597,8 @@
     }
 }
 
-/* ── MOBILE: horizontal scroll carousels ─────────────────────── */
+/* Vertical compacting for handheld devices */
 @media (max-width: 700px) {
-
     .m-wrap {
         padding: 0 16px;
     }
@@ -586,7 +608,9 @@
     }
 
     .m-hero__content {
-        padding: 0 20px 22px;
+        padding-bottom: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .m-hero__title {
@@ -603,6 +627,7 @@
         gap: 8px;
     }
 
+    /* Horizontal scroll behavior for category lists */
     .m-filter__pills {
         gap: 6px;
         overflow-x: auto;
@@ -610,102 +635,109 @@
         padding-bottom: 2px;
     }
 
+    /* Hide horizontal scrollbar for cleaner look */
     .m-filter__pills::-webkit-scrollbar {
         display: none;
     }
 
+    /* Compact pill size on mobile */
     .m-pill {
         font-size: .72rem;
         padding: 6px 12px;
         flex-shrink: 0;
     }
 
+    /* Hide search box in mobile filter menu */
     .m-filter__search {
         display: none;
     }
 
-    /* ── Hot Beverages slider ── */
+    /* Convert grid to horizontal slider for mobile */
     .m-grid-4 {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
         gap: 14px;
         padding-bottom: 12px;
     }
 
+    /* Hide slider scrollbar */
     .m-grid-4::-webkit-scrollbar {
         display: none;
     }
 
+    /* Card sizing for horizontal slider view */
     .m-grid-4 .m-card {
         flex: 0 0 72vw;
         max-width: 280px;
         scroll-snap-align: start;
     }
 
-    /* ── Cold Beverages slider ── */
+    /* Convert dense grid to slider */
     .m-grid-5 {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
         gap: 12px;
         padding-bottom: 12px;
     }
 
+    /* Hide slider scrollbar */
     .m-grid-5::-webkit-scrollbar {
         display: none;
     }
 
+    /* Small card sizing for horizontal slider view */
     .m-grid-5 .m-card--sm {
         flex: 0 0 52vw;
         max-width: 200px;
         scroll-snap-align: start;
     }
 
-    /* ── Artisan Sodas slider ── */
+    /* Convert artisan grid to slider */
     .m-artisan-grid {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
         gap: 14px;
         padding-bottom: 12px;
     }
 
+    /* Hide slider scrollbar */
     .m-artisan-grid::-webkit-scrollbar {
         display: none;
     }
 
+    /* Artisan item sizing for horizontal slider view */
     .m-artisan-grid .m-artisan {
         flex: 0 0 58vw;
         max-width: 220px;
         scroll-snap-align: start;
     }
 
-    /* ── Fresh Juices slider ── */
+    /* Convert juice list to slider */
     .m-juice-list {
         display: flex;
         flex-direction: row;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
         gap: 12px;
         padding-bottom: 8px;
     }
 
+    /* Hide slider scrollbar */
     .m-juice-list::-webkit-scrollbar {
         display: none;
     }
 
+    /* Juice item sizing for horizontal slider view */
     .m-juice {
         flex: 0 0 82vw;
         max-width: 300px;
         scroll-snap-align: start;
     }
 
-    /* ── Wellness grid → single column, stacks downward ── */
+    /* Health category card sizing adjustments */
     .m-wellness-grid {
         grid-template-columns: 1fr;
         max-width: 50%;
@@ -715,11 +747,12 @@
         height: 140px;
     }
 
-    /* Section spacing */
+    /* Tighter section margins on smaller screens */
     .m-section {
         padding: 32px 0 28px;
     }
 
+    /* Category title sizing on mobile */
     .m-section__title {
         font-size: 1.25rem;
         margin-bottom: 16px;

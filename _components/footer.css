@@ -1,10 +1,12 @@
+/* Main footer area with background and padding */
 .footer {
     padding: 80px 40px 40px;
     border-top: 1px solid #f8f8f8;
-    background: #fff;
-    color: #333;
+    background-color: #ffffff;
+    color: #333333;
 }
 
+/* Grid layout for footer columns */
 .footer-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -13,15 +15,16 @@
     gap: 40px;
 }
 
+/* Paragraph styling in the brand column */
 .footer-brand p {
     color: #a5b4c1;
-    /* Light blue-gray from image */
     line-height: 1.6;
     margin-bottom: 25px;
     max-width: 280px;
     font-size: 14px;
 }
 
+/* Container for logo and site title */
 .footer-logo {
     display: flex;
     align-items: center;
@@ -29,6 +32,7 @@
     margin-bottom: 30px;
 }
 
+/* Footer logo text font and color */
 .footer-logo span {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
@@ -37,6 +41,7 @@
     color: #2c1e1a;
 }
 
+/* Round logo image in footer */
 .footer-logo img {
     width: 40px;
     height: 40px;
@@ -44,32 +49,36 @@
     object-fit: cover;
 }
 
+/* Social icons container */
 .social-links {
     display: flex;
     gap: 12px;
 }
 
+/* Circular social icon style */
 .social-icon {
     width: 34px;
     height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #D1641E;
-    /* Primary orange */
-    color: #fff;
+    background-color: #D1641E;
+    /* BrewHaven Brand Primary */
+    color: #ffffff;
     border-radius: 50%;
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 14px;
-    box-shadow: 0 4px 8px rgba(209, 100, 30, 0.3);
+    box-shadow: 0px 4px 8px rgba(209, 100, 30, 0.3);
 }
 
+/* Lift icons slightly on hover */
 .social-icon:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(209, 100, 30, 0.4);
+    box-shadow: 0px 6px 12px rgba(209, 100, 30, 0.4);
 }
 
+/* Column headers in the footer */
 .footer-links-col h4 {
     font-size: 13px;
     font-weight: 800;
@@ -79,46 +88,54 @@
     text-transform: uppercase;
 }
 
+/* Reset for footer navigation lists */
 .footer-links {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
+/* Spacing between footer list items */
 .footer-links li {
     margin-bottom: 12px;
 }
 
+/* Footer link color and hover transition */
 .footer-links a {
-    color: #999;
+    color: #999999;
     text-decoration: none;
     font-size: 13px;
     transition: color 0.3s ease;
 }
 
+/* Change link color on hover */
 .footer-links a:hover {
     color: #D1641E;
 }
 
+/* Reset for contact info list */
 .contact-list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
+/* Individual contact item layout */
 .contact-list li {
     display: flex;
     gap: 15px;
     margin-bottom: 18px;
-    color: #999;
+    color: #999999;
     font-size: 13px;
     line-height: 1.4;
 }
 
+/* Email/Phone icon color */
 .contact-list i {
     color: #D1641E;
     font-size: 14px;
     margin-top: 2px;
 }
 
+/* Container for newsletter inputs */
 .newsletter-form {
     display: flex;
     flex-direction: column;
@@ -126,30 +143,34 @@
     align-items: flex-start;
 }
 
+/* Newsletter section description */
 .newsletter-form p {
-    color: #999;
+    color: #999999;
     font-size: 13px;
     margin-bottom: 5px;
 }
 
+/* Email input box styling */
 .newsletter-form input {
     width: 100%;
     padding: 14px 20px;
     border: 1px solid #f0f0f0;
-    background: #fcfcfc;
+    background-color: #fcfcfc;
     border-radius: 10px;
     outline: none;
     font-size: 13px;
-    color: #333;
+    color: #333333;
 }
 
+/* Fade out placeholder text */
 .newsletter-form input::placeholder {
-    color: #ccc;
+    color: #cccccc;
 }
 
+/* Subscribe button background and shadow */
 .btn-subscribe {
-    background: #D1641E;
-    color: #fff;
+    background-color: #D1641E;
+    color: #ffffff;
     padding: 12px 30px;
     border: none;
     border-radius: 8px;
@@ -157,14 +178,16 @@
     font-size: 13px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(209, 100, 30, 0.2);
+    box-shadow: 0px 4px 10px rgba(209, 100, 30, 0.2);
 }
 
+/* Darken button on hover */
 .btn-subscribe:hover {
-    background: #b05318;
+    background-color: #b05318;
     transform: translateY(-1px);
 }
 
+/* Divider and content for bottom legal area */
 .footer-bottom {
     max-width: 1200px;
     margin: 60px auto 0;
@@ -174,24 +197,28 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-    color: #ccc;
+    color: #cccccc;
 }
 
+/* Privacy and terms links */
 .footer-legal {
     display: flex;
     gap: 25px;
 }
 
+/* Legal link color and hover */
 .footer-legal a {
-    color: #ccc;
+    color: #cccccc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/* Darken legal link on hover */
 .footer-legal a:hover {
-    color: #999;
+    color: #999999;
 }
 
+/* Collapse footer grid to 2 columns on tablet */
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -199,6 +226,7 @@
     }
 }
 
+/* Stack footer elements vertically on mobile */
 @media (max-width: 768px) {
     .footer {
         padding: 60px 20px 40px;
@@ -209,29 +237,46 @@
         gap: 40px;
     }
 
-    .footer-brand,
+    /* Center brand content on mobile */
+    .footer-brand {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Center newsletter form on mobile */
     .newsletter-form {
         align-items: center;
         text-align: center;
     }
 
+    /* Center brand paragraph on mobile */
     .footer-brand p {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
-    .footer-logo,
-    .social-links,
+    /* Center logo on mobile */
+    .footer-logo {
+        justify-content: center;
+    }
+
+    /* Center social links on mobile */
+    .social-links {
+        justify-content: center;
+    }
+
+    /* Center contact list items on mobile */
     .contact-list li {
         justify-content: center;
     }
 
+    /* Stack bottom footer content on mobile */
     .footer-bottom {
         flex-direction: column;
         gap: 20px;
         text-align: center;
     }
 
+    /* Center legal links on mobile */
     .footer-legal {
         justify-content: center;
     }

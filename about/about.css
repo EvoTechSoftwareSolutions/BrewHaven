@@ -1,42 +1,36 @@
-:root {
-    --primary: #D17842;
-    --primary-dark: #b5612e;
-    --dark: #1a1a1a;
-    --dark-bg: #14110F;
-    --gray: #777;
-    --gray-light: #aaa;
-    --light: #f9f9f9;
-    --border: #e8e8e8;
-    --white: #ffffff;
-}
-
+/* Main body background and font reset */
 body {
-    background: var(--white);
+    background-color: #ffffff;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--dark);
+    color: #1a1a1a;
     margin: 0;
     padding: 0;
 }
 
+/* Centered content wrapper with side padding */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-/* Hero Section */
+/* Hero section with background image and overlay */
 .about-hero {
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../_resources/about/backgroundimage.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../_resources/about/backgroundimage.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--white);
+    color: #ffffff;
 }
 
+/* Uppercase decorative label for headings */
 .section-tag {
     color: #D17842;
     font-size: 0.9rem;
@@ -47,19 +41,21 @@ body {
     margin-bottom: 20px;
 }
 
+/* Large main title in about page hero */
 .about-hero-content h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 50px;
     font-weight: 900;
     margin-bottom: 35px;
-    line-height: 1;
-    letter-spacing: -2px;
-    color: #fff;
-    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: #ffffff;
+    max-width: 900px;
 }
 
+/* Muted description text in about page hero */
 .about-hero-content p {
     font-size: 0.95rem;
     max-width: 600px;
@@ -67,14 +63,16 @@ body {
     opacity: 0.6;
     font-weight: 400;
     line-height: 1.8;
-    color: #fff;
+    color: #ffffff;
 }
 
-/* Story Section */
+/* Section for the brand narrative content */
 .about-story {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
+/* Side-by-side grid for story text and image */
 .story-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -82,6 +80,7 @@ body {
     align-items: center;
 }
 
+/* Brand story headline style */
 .story-text h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5rem;
@@ -91,15 +90,17 @@ body {
     letter-spacing: -1px;
 }
 
+/* Brand story paragraph styling */
 .story-text p {
-    color: var(--gray);
+    color: #777777;
     line-height: 1.9;
     margin-bottom: 24px;
     font-size: 0.85rem;
 }
 
+/* Link with arrow and hover effect */
 .learn-more {
-    color: var(--primary);
+    color: #D17842;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.9rem;
@@ -111,11 +112,13 @@ body {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Lift effect on 'learn more' links */
 .learn-more:hover {
     transform: translateX(5px);
-    color: var(--primary-dark);
+    color: #b5612e;
 }
 
+/* Container for story section visuals */
 .story-image {
     display: flex;
     justify-content: center;
@@ -123,34 +126,36 @@ body {
     transition: transform 0.5s ease;
 }
 
+/* Slide image up on hover */
 .story-image:hover {
     transform: translateY(-10px);
 }
 
+/* Fixed width story image with rounded corners */
 .story-image img {
     width: 400px;
     height: auto;
     border-radius: 12px;
 }
 
-
-
-/* Quote & Stats Section */
+/* Dark section for quotes and achievement statistics */
 .about-quote-stats {
-    background: var(--dark-bg);
+    background-color: #14110F;
     padding: 120px 0;
-    color: var(--white);
+    color: #ffffff;
     text-align: center;
 }
 
+/* Large decorative quotation mark */
 .quote-icon {
-    color: var(--primary);
+    color: #D17842;
     font-size: 4rem;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
     line-height: 1;
 }
 
+/* Big mission statement headline */
 .about-quote-stats h2 {
     font-family: 'Playfair Display', serif;
     font-size: 3.2rem;
@@ -161,6 +166,7 @@ body {
     letter-spacing: -1px;
 }
 
+/* Vertical grouping for mission tag and divider */
 .mission-label {
     display: flex;
     flex-direction: column;
@@ -169,30 +175,34 @@ body {
     margin-bottom: 60px;
 }
 
+/* Small divider line in mission label */
 .mission-label .divider {
     width: 50px;
     height: 1px;
-    background: rgba(209, 120, 66, 0.3);
+    background-color: rgba(209, 120, 66, 0.3);
 }
 
+/* Core mission label text style */
 .mission-label .label-text {
-    color: var(--primary);
+    color: #D17842;
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 3px;
     opacity: 0.9;
 }
 
+/* Grid layout for displaying statistics cards */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* Individual card for a single stat item */
 .stat-card {
-    background: rgba(255, 255, 255, 0.03);
+    background-color: rgba(255, 255, 255, 0.03);
     padding: 45px 30px;
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -203,41 +213,44 @@ body {
     gap: 20px;
 }
 
+/* Lift and highlight stat card on hover */
 .stat-card:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     transform: translateY(-8px);
     border-color: rgba(209, 120, 66, 0.3);
 }
 
+/* Icon style inside statistic cards */
 .stat-card i {
-    color: var(--primary);
+    color: #D17842;
     font-size: 1.5rem;
 }
 
+/* Metric number or title in stat card */
 .stat-card h4 {
     font-size: 1.2rem;
-    color: var(--white);
-    margin: 0;
+    color: #ffffff;
     font-weight: 700;
 }
 
+/* Description text inside stat cards */
 .stat-card p {
     font-size: 0.75rem;
-    color: var(--gray-light);
-    margin: 0;
+    color: #aaaaaa;
     line-height: 1.8;
     max-width: 220px;
     opacity: 0.6;
 }
 
-/* Values Section */
+/* Dark section explaining core company values */
 .about-values {
-    background: var(--dark-bg);
+    background-color: #14110F;
     padding: 120px 0;
-    color: var(--white);
+    color: #ffffff;
     text-align: center;
 }
 
+/* Main title for the values section */
 .about-values h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 3rem;
@@ -245,12 +258,14 @@ body {
     font-weight: 800;
 }
 
+/* Three-column grid layout for values cards */
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 }
 
+/* Singular block for a specific company value */
 .value-card {
     display: flex;
     flex-direction: column;
@@ -258,13 +273,15 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Subtle lift on value card hover */
 .value-card:hover {
     transform: translateY(-5px);
 }
 
+/* Icon box for each value card */
 .value-icon {
-    background: rgba(209, 120, 66, 0.1);
-    color: var(--primary);
+    background-color: rgba(209, 120, 66, 0.1);
+    color: #D17842;
     width: 48px;
     height: 48px;
     display: flex;
@@ -272,36 +289,40 @@ body {
     justify-content: center;
     border-radius: 10px;
     font-size: 1.3rem;
-    margin: 0 0 25px;
+    margin-bottom: 25px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/* Rotate and scale icon on value card hover */
 .value-card:hover .value-icon {
-    background: var(--primary);
-    color: var(--white);
+    background-color: #D17842;
+    color: #ffffff;
     transform: rotate(15deg) scale(1.1);
 }
 
+/* Value card title style */
 .value-card h3 {
     font-size: 1.35rem;
     margin-bottom: 22px;
     font-weight: 800;
     font-family: 'Work Sans', sans-serif;
-    color: var(--white);
+    color: #ffffff;
 }
 
+/* Detailed description paragraph for a value */
 .value-card p {
-    color: var(--gray-light);
+    color: #aaaaaa;
     line-height: 2;
     font-size: 0.8rem;
     opacity: 0.6;
 }
 
-/* Harvest Section */
+/* Section focusing on sourcing and harvest process */
 .about-harvest {
     padding: 120px 0;
 }
 
+/* Grid layout for harvest section description and image */
 .harvest-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -309,9 +330,9 @@ body {
     align-items: center;
 }
 
-
+/* Rounded tag for the harvest section */
 .harvest-pill {
-    background: #FDF0E6;
+    background-color: #FDF0E6;
     color: #D17842;
     padding: 8px 18px;
     border-radius: 50px;
@@ -322,54 +343,61 @@ body {
     margin-bottom: 25px;
 }
 
+/* Large headline for processing/harvesting */
 .harvest-text h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5rem;
     margin-bottom: 30px;
     font-weight: 900;
     line-height: 1;
-    color: var(--dark);
+    color: #1a1a1a;
 }
 
+/* Descriptive paragraph about harvest quality */
 .harvest-text p {
-    color: #555;
+    color: #555555;
     line-height: 1.8;
     margin-bottom: 35px;
     font-size: 0.95rem;
     max-width: 500px;
 }
 
+/* Vertical list for harvest key points */
 .harvest-list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
+/* List item row in the harvest section */
 .harvest-list li {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 18px;
-    color: #444;
+    color: #444444;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
+/* Orange checkmark or point icon beside list text */
 .harvest-list i {
     color: #D17842;
     font-size: 1.3rem;
 }
 
+/* Highlighted image for the harvest process */
 .harvest-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.1);
 }
 
-/* Sanctuary Section */
+/* Main segment for interior/sanctuary display */
 .about-sanctuary {
     padding: 120px 0;
 }
 
+/* Layout for sanctuary text and internal photo grid */
 .sanctuary-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -377,6 +405,7 @@ body {
     align-items: center;
 }
 
+/* Grid showing multiple smaller interior photos */
 .sanctuary-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -384,6 +413,7 @@ body {
     align-items: start;
 }
 
+/* Image style for the interior photo collection */
 .sanctuary-images img {
     width: 100%;
     height: auto;
@@ -391,45 +421,52 @@ body {
     border-radius: 20px;
 }
 
+/* Top margin adjustment for bean photo */
 .img-beans {
     margin-top: 20px;
-    margin-bottom: 10px;
 }
 
+/* Top margin adjustment for cup photo */
 .img-cup {
     margin-top: 40px;
 }
 
+/* Negative margin for overlapping light photo effect */
 .img-light {
     margin-top: -70px;
 }
 
+/* Small nudge for interior photo alignment */
 .img-interior {
     margin-top: 6px;
 }
 
+/* Text block in the sanctuary section */
 .sanctuary-text {
     text-align: left;
     padding-left: 40px;
 }
 
+/* Bold headline for the shop interior section */
 .sanctuary-text h2 {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5rem;
     margin-bottom: 30px;
     font-weight: 900;
     line-height: 1.1;
-    color: var(--dark);
+    color: #1a1a1a;
 }
 
+/* Sanctuary description text styling */
 .sanctuary-text p {
-    color: #555;
+    color: #555555;
     line-height: 1.8;
     margin-bottom: 35px;
     font-size: 0.95rem;
     max-width: 520px;
 }
 
+/* Individual feature highlight within sanctuary */
 .sanctuary-feature {
     display: flex;
     align-items: center;
@@ -437,8 +474,9 @@ body {
     margin-bottom: 30px;
 }
 
+/* Box for icons within the sanctuary highlights */
 .feature-icon-box {
-    background: #FDF0E6;
+    background-color: #FDF0E6;
     color: #D17842;
     width: 50px;
     height: 50px;
@@ -451,28 +489,30 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Pulse icon box on feature row hover */
 .sanctuary-feature:hover .feature-icon-box {
     transform: scale(1.1);
 }
 
+/* Text info for a sanctuary feature */
 .feature-info h4 {
     font-size: 1.1rem;
     margin-bottom: 4px;
     font-weight: 800;
-    color: var(--dark);
+    color: #1a1a1a;
 }
 
+/* Small detail text for features */
 .feature-info p {
     font-size: 0.85rem;
-    margin: 0;
-    color: #777;
+    color: #777777;
     line-height: 1.5;
 }
 
-/* Footer Overrides for consistency */
+/* Final orange subscribe button override */
 .btn-subscribe {
-    background: var(--primary) !important;
-    color: var(--white) !important;
+    background-color: #D17842 !important;
+    color: #ffffff !important;
     border: none !important;
     border-radius: 8px !important;
     padding: 12px !important;
@@ -480,22 +520,24 @@ body {
     cursor: pointer !important;
     margin-top: 10px !important;
     width: 100% !important;
-    transition: background 0.3s ease !important;
+    transition: background-color 0.3s ease !important;
 }
 
+/* Darker orange on subscribe button hover */
 .btn-subscribe:hover {
-    background: var(--primary-dark) !important;
+    background-color: #b5612e !important;
 }
 
+/* Text input override for consistent sizing */
 .newsletter-form input {
-    border: 1px solid var(--border) !important;
+    border: 1px solid #e8e8e8 !important;
     border-radius: 8px !important;
     padding: 12px !important;
     width: 100% !important;
     box-sizing: border-box !important;
 }
 
-/* Responsive */
+/* Collapse grid sections to single column for tablet */
 @media (max-width: 992px) {
 
     .story-grid,
@@ -511,10 +553,11 @@ body {
 
     .stats-grid,
     .values-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 }
 
+/* Responsive fixes for handheld devices */
 @media (max-width: 768px) {
 
     .stats-grid,
@@ -527,6 +570,7 @@ body {
     }
 
     .container {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

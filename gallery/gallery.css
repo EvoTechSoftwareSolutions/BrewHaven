@@ -1,34 +1,26 @@
-:root {
-    --primary: #D17842;
-    --primary-dark: #b5612e;
-    --dark: #1a1a1a;
-    --gray: #777;
-    --gray-light: #aaa;
-    --light: #f9f9f9;
-    --border: #e8e8e8;
-    --bg-accent: #FFF2EB;
-}
-
+/* Main body styling for the gallery page */
 body {
-    background: #ffffff;
+    background-color: #ffffff;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--dark);
+    color: #1a1a1a;
     margin: 0;
     padding: 0;
 }
 
+/* Centered container with side padding */
 .gallery-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Hero Section */
+/* Header section for gallery page title */
 .gallery-hero {
-    padding: 40px 0 40px;
+    padding: 40px 0;
     text-align: left;
 }
 
+/* Main title of the gallery page */
 .gallery-hero h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 3rem;
@@ -38,28 +30,28 @@ body {
     letter-spacing: -1px;
 }
 
+/* Highlighted span in the hero title */
 .gallery-hero h1 span {
-    color: var(--primary);
+    color: #D17842;
     font-style: normal;
-    /* Match the bold non-italic style in image */
 }
 
+/* Subtext description in the hero */
 .gallery-hero p {
-    color: #777;
+    color: #777777;
     font-size: 1.1rem;
     max-width: 550px;
-    margin: 0;
+    margin-top: -20px;
     line-height: 1.7;
     font-weight: 400;
-    margin-top: -20px;
 }
 
-/* Filters */
+/* Container for gallery filtering controls */
 .gallery-filters {
     padding: 20px 0 60px;
-
 }
 
+/* Centered row of filter buttons */
 .filter-pills {
     display: flex;
     justify-content: center;
@@ -69,54 +61,61 @@ body {
     margin-bottom: -30px;
 }
 
+/* Rounded button style for filters */
 .filter-pill {
     padding: 12px 28px;
     border-radius: 50px;
-    border: 1px solid #eee;
-    background: #fff;
-    color: #444;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    color: #444444;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 0.85rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.02);
 }
 
+/* Orange border and text on filter hover */
 .filter-pill:hover {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: #D17842;
+    color: #D17842;
 }
 
+/* Solid orange background for active filter */
 .filter-pill.active {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
-    box-shadow: 0 4px 12px rgba(209, 120, 66, 0.3);
+    background-color: #D17842;
+    color: #ffffff;
+    border-color: #D17842;
+    box-shadow: 0px 4px 12px rgba(209, 120, 66, 0.3);
 }
 
-/* Masonry Grid to Grid */
+/* Main section for the gallery image grid */
 .gallery-grid-section {
     padding-bottom: 80px;
 }
 
+/* Three-column grid layout for photos */
 .gallery-masonry {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
+/* Individual photo container with fixed height */
 .gallery-item {
     border-radius: 12px;
     overflow: hidden;
-    background: var(--light);
+    background-color: #f9f9f9;
     transition: transform 0.3s ease, opacity 0.3s ease;
     height: 350px;
 }
 
+/* Card spanning across two grid columns */
 .gallery-item.gallery-item--wide {
     grid-column: span 2;
 }
 
+/* Gallery image filling its container */
 .gallery-item img {
     width: 100%;
     height: 100%;
@@ -125,18 +124,20 @@ body {
     transition: transform 0.5s ease;
 }
 
+/* Subtle image zoom on hover */
 .gallery-item:hover img {
     transform: scale(1.05);
 }
 
-/* CTA Section */
+/* Background section for the page foot CTA */
 .gallery-cta {
     padding: 80px 0;
-    background: #fdfdfd;
+    background-color: #fdfdfd;
 }
 
+/* Centered call-to-action color block */
 .cta-card {
-    background: var(--bg-accent);
+    background-color: #FFF2EB;
     padding: 60px 40px;
     border-radius: 24px;
     text-align: center;
@@ -144,25 +145,29 @@ body {
     margin: 0 auto;
 }
 
+/* Section title for the CTA card */
 .cta-card h2 {
-    font-family: 'Work sans', serif;
+    font-family: 'Work Sans', serif;
     font-size: 2.5rem;
     margin-bottom: 15px;
-    font-weight: 1000;
+    font-weight: 800;
 }
 
+/* Descriptive paragraph inside the CTA card */
 .cta-card p {
-    color: var(--gray);
+    color: #777777;
     margin-bottom: 30px;
     font-size: 0.9rem;
 }
 
+/* Horizontal group for CTA buttons */
 .cta-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
+/* Base styling for page buttons */
 .btn {
     padding: 14px 30px;
     border-radius: 12px;
@@ -170,33 +175,35 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
-    text-transform: none;
-    letter-spacing: normal;
 }
 
+/* Solid orange primary button style */
 .btn-primary {
-    background: var(--primary);
-    color: white;
+    background-color: #D17842;
+    color: #ffffff;
 }
 
+/* Darken primary button on hover */
 .btn-primary:hover {
-    background: var(--primary-dark);
+    background-color: #b5612e;
     transform: translateY(-2px);
 }
 
+/* White background secondary button style */
 .btn-secondary {
-    background: white;
-    color: var(--dark);
-    border: 1px solid var(--border);
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #e8e8e8;
 }
 
+/* Highlight secondary button on hover */
 .btn-secondary:hover {
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: #D17842;
+    color: #D17842;
     transform: translateY(-2px);
 }
 
-/* Responsive */
+/* Switch to two columns on tablet */
 @media (max-width: 992px) {
     .gallery-masonry {
         grid-template-columns: repeat(2, 1fr);
@@ -207,6 +214,7 @@ body {
     }
 }
 
+/* Single column stack for mobile devices */
 @media (max-width: 768px) {
     .gallery-hero h1 {
         font-size: 2.8rem;

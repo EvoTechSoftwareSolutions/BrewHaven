@@ -1,87 +1,89 @@
-:root {
-    --primary: #cf6317;
-    --primary-light: #FDF0E6;
-    --primary-dark: #a85212;
-    --background-light: #f8f7f6;
-    --background-dark: #211811;
-    --text-main: #181411;
-    --text-muted: #887263;
-    --white: #ffffff;
-    --border: #e8e8e8;
-}
-
+/* Body background and primary font settings */
 body {
-    background-color: var(--background-light);
-    color: var(--text-main);
+    background-color: #f8f7f6;
+    color: #181411;
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Centered main container layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
+/* Container with padding removed */
 .container.no-padding {
     padding: 0;
 }
 
+/* Relative positioning utility class */
 .relative {
     position: relative;
 }
 
+/* Large top margin utility (80px) */
 .mt-20 {
     margin-top: 80px;
 }
 
+/* Larger top margin utility (96px) */
 .mt-24 {
     margin-top: 96px;
 }
 
-/* Hero Section */
+/* Top section for the contact page header */
 .contact-hero {
-    padding: 50px 0 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
     text-align: left;
 }
 
+/* Small label above the main hero title */
 .hero-tag {
     display: inline-block;
-    color: var(--primary);
+    color: #cf6317;
     font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
+/* Large headline on the contact page */
 .contact-hero h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 30px;
-    color: var(--text-main);
+    color: #181411;
     letter-spacing: -2px;
     line-height: 1;
-
 }
 
+/* Highlighted text within the main headline */
 .contact-hero h1 span {
-    color: var(--primary);
+    color: #cf6317;
 }
 
+/* Main intro paragraph for page info */
 .contact-hero p {
-    color: var(--text-muted);
+    color: #887263;
     font-size: 1.1rem;
     max-width: 600px;
     line-height: 1.8;
 }
 
-/* Contact Content */
+/* Main section for forms and location info */
 .contact-section {
     padding-bottom: 100px;
 }
 
+/* Side-by-side grid for form and sidebar */
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -89,7 +91,7 @@ body {
     align-items: start;
 }
 
-/* Form Styles */
+/* Split row for two input fields */
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -97,89 +99,118 @@ body {
     margin-bottom: 25px;
 }
 
+/* Spacing between vertical form groups */
 .form-group {
     margin-bottom: 25px;
 }
 
+/* Label text above input fields */
 .form-group label {
     display: block;
     font-size: 0.85rem;
     font-weight: 800;
     margin-bottom: 12px;
-    color: var(--text-main);
+    color: #181411;
 }
 
-.form-group input,
+/* Styling for a standard text input field */
+.form-group input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #181411;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Multi-line message textarea styling */
 .form-group textarea {
     width: 100%;
     padding: 16px 20px;
     border-radius: 10px;
-    border: 1px solid var(--border);
-    background: var(--white);
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
     font-family: inherit;
     font-size: 0.95rem;
-    color: var(--text-main);
-    transition: all 0.3s ease;
+    color: #181411;
+    transition: 0.3s ease;
     box-sizing: border-box;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(207, 99, 23, 0.05);
-}
-
-.form-group textarea {
     height: 180px;
     resize: none;
 }
 
+/* Change border color when input is active */
+.form-group input:focus {
+    outline: none;
+    border-color: #cf6317;
+    box-shadow: 0px 0px 0px 4px rgba(207, 99, 23, 0.05);
+}
+
+/* Change border color when textarea is active */
+.form-group textarea:focus {
+    outline: none;
+    border-color: #cf6317;
+    box-shadow: 0px 0px 0px 4px rgba(207, 99, 23, 0.05);
+}
+
+/* Main submit button for sending messages */
 .btn-send {
-    background: var(--primary);
-    color: var(--white);
+    background-color: #cf6317;
+    color: #ffffff;
     border: none;
     padding: 18px 45px;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 800;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
+/* Darken and lift button on hover */
 .btn-send:hover {
-    background: var(--primary-dark);
+    background-color: #a85212;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(207, 99, 23, 0.2);
+    box-shadow: 0px 10px 25px rgba(207, 99, 23, 0.2);
 }
 
-/* Direct Info Sidebar */
+/* Sidebar box for location and phone info */
 .contact-info-side {
-    background: #fdfaf8;
+    background-color: #fdfaf8;
     padding: 60px 50px;
     border-radius: 20px;
 }
 
+/* Header within the info sidebar */
 .info-header {
     margin-bottom: 40px;
 }
 
+/* Small divider line in the sidebar */
 .header-divider {
     width: 40px;
     height: 4px;
-    background: var(--primary);
+    background-color: #cf6317;
     margin-bottom: 15px;
 }
 
+/* Title for sidebar info blocks */
 .info-header h3 {
     font-size: 1.8rem;
     font-weight: 900;
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
+/* Vertical list for address and phone details */
 .direct-info-list {
     display: flex;
     flex-direction: column;
@@ -187,15 +218,17 @@ body {
     margin-bottom: 60px;
 }
 
+/* Single block for a contact method */
 .direct-item {
     display: flex;
     gap: 25px;
     align-items: flex-start;
 }
 
+/* Icon box inside sidebar info items */
 .item-icon {
-    background: var(--primary-light);
-    color: var(--primary);
+    background-color: #FDF0E6;
+    color: #cf6317;
     width: 54px;
     height: 54px;
     min-width: 54px;
@@ -206,19 +239,28 @@ body {
     font-size: 1.2rem;
 }
 
+/* Label for specific info item */
 .item-text h4 {
     font-size: 1.15rem;
     font-weight: 800;
-    margin: 0 0 8px 0;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
+/* Detail text for phone numbers or addresses */
 .item-text p {
-    color: var(--text-muted);
+    color: #887263;
     font-size: 0.95rem;
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     line-height: 1.6;
 }
 
+/* Descriptive sublabel under info text */
 .item-text span {
     font-size: 0.8rem;
     font-weight: 700;
@@ -226,40 +268,47 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* Bold orange link in contact sidebar */
 .item-text a {
-    color: var(--primary);
+    color: #cf6317;
     text-decoration: none;
     font-weight: 800;
 }
 
-/* Wholesale Box */
+/* Secondary box for business/wholesale info */
 .wholesale-box {
-    background: #f4efeb;
+    background-color: #f4efeb;
     padding: 40px;
     border-radius: 15px;
 }
 
+/* Title for the wholesale information box */
 .wholesale-box h4 {
     font-size: 1.2rem;
     font-weight: 900;
-    margin: 0 0 12px 0;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
+/* Wholesale description paragraph styling */
 .wholesale-box p {
-    color: var(--text-muted);
+    color: #887263;
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
+/* Bold orange link for wholesale inquiries */
 .wholesale-link {
-    color: var(--primary);
+    color: #cf6317;
     text-decoration: none;
     font-weight: 800;
     font-size: 0.9rem;
 }
 
-/* Map Section */
+/* Large container for interactive shop map */
 .map-container {
     width: 100%;
     height: 600px;
@@ -269,22 +318,25 @@ body {
     overflow: hidden;
 }
 
+/* Actual map iframe styling with grayscale filter */
 .map-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     filter: grayscale(1) contrast(1.2) opacity(0.8);
 }
 
+/* Transparent gradient overlay on map */
 .map-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle, transparent 40%, rgba(108, 142, 125, 0.2) 100%);
+    background-image: radial-gradient(circle, transparent 40%, rgba(108, 142, 125, 0.2) 100%);
     pointer-events: none;
 }
 
+/* Visual pin/marker on the center of the map */
 .map-marker {
     position: absolute;
     top: 50%;
@@ -298,42 +350,46 @@ body {
     pointer-events: none;
 }
 
+/* Circular pin background with white border */
 .marker-icon {
     width: 70px;
     height: 70px;
-    background: var(--primary);
-    color: var(--white);
+    background-color: #cf6317;
+    color: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    border: 3px solid var(--white);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
 }
 
+/* Informational label beside the map pin */
 .marker-label {
-    background: var(--white);
+    background-color: #ffffff;
     padding: 15px 30px;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Bold shop name in the map tag */
 .marker-label strong {
     display: block;
     font-size: 1rem;
     font-weight: 900;
-    color: var(--text-main);
+    color: #181411;
 }
 
+/* Small address detail in map tag */
 .marker-label span {
     font-size: 0.85rem;
-    color: var(--text-muted);
+    color: #887263;
     font-weight: 700;
 }
 
-/* Responsive */
+/* Stack form and sidebar vertically on tablet */
 @media (max-width: 1024px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -345,6 +401,7 @@ body {
     }
 }
 
+/* Reflow input fields to single column on mobile */
 @media (max-width: 768px) {
     .form-row {
         grid-template-columns: 1fr;

@@ -1,84 +1,83 @@
-:root {
-    --primary: #cf6317;
-    --primary-dark: #a85212;
-    --background-light: #f8f7f6;
-    --background-dark: #211811;
-    --text-main: #181411;
-    --text-muted: #887263;
-    --white: #ffffff;
-}
-
+/* Body background and primary font settings */
 body {
-    background-color: var(--background-light);
-    color: var(--text-main);
+    background-color: #f8f7f6;
+    color: #181411;
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease;
 }
 
+/* Centered main container layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-/* Services Hero */
+/* Main hero header for services page */
 .services-hero {
     padding: 100px 0 60px;
     text-align: center;
 }
 
+/* Page headline with extra weight */
 .services-hero h1 {
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 24px;
-    color: var(--text-main);
+    color: #181411;
     letter-spacing: -1px;
 }
 
+/* Orange highlighted text in headline */
 .services-hero h1 span {
-    color: var(--primary);
+    color: #cf6317;
 }
 
+/* Description paragraph for services */
 .services-hero p {
-    color: var(--text-muted);
+    color: #887263;
     font-size: 1.15rem;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
-/* Services Grid */
+/* Main content wrapper for service cards */
 .services-section {
     padding: 60px 0 100px;
 }
 
+/* Flexible grid for displaying services */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
+/* Individual service info block */
 .service-card {
-    background: var(--white);
+    background-color: #ffffff;
     padding: 40px 30px;
     border-radius: 12px;
     border: 1px solid rgba(207, 99, 23, 0.1);
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s ease;
     text-align: left;
     display: flex;
     flex-direction: column;
 }
 
+/* Subtle lift and border change on hover */
 .service-card:hover {
     transform: translateY(-8px);
     border-color: rgba(207, 99, 23, 0.4);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05);
 }
 
+/* Circular box for service category icon */
 .service-icon {
-    background: #FDF0E6;
+    background-color: #FDF0E6;
     color: #D17842;
     width: 50px;
     height: 50px;
@@ -90,90 +89,100 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Reverse icon colors on card hover */
 .service-card:hover .service-icon {
-    background: var(--primary);
-    color: var(--white);
+    background-color: #cf6317;
+    color: #ffffff;
 }
 
+/* Size for font-awesome icons */
 .service-icon i {
     font-size: 1.2rem;
 }
 
+/* Service title within the card */
 .service-card h3 {
     font-size: 1.25rem;
     font-weight: 850;
     margin-bottom: 16px;
-    color: var(--text-main);
+    color: #181411;
     line-height: 1.3;
 }
 
+/* Muted description text for service details */
 .service-card p {
-    color: var(--text-muted);
+    color: #887263;
     font-size: 0.85rem;
     line-height: 1.8;
-    margin: 0;
 }
 
-/* CTA Section */
+/* Spacing for call-to-action bottom area */
 .cta-section {
     padding: 60px 0 120px;
 }
 
+/* Highlighted orange box for page conclusion */
 .cta-box {
-    background: var(--primary);
+    background-color: #cf6317;
     border-radius: 20px;
     padding: 80px 40px;
     text-align: center;
-    color: var(--white);
+    color: #ffffff;
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
 
-.cta-box::before,
-.cta-box::after {
+/* Abstract circle shape decoration (left) */
+.cta-box::before {
     content: '';
     position: absolute;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     z-index: -1;
-}
-
-.cta-box::before {
     width: 320px;
     height: 320px;
     top: -160px;
     left: -160px;
 }
 
+/* Abstract circle shape decoration (right) */
 .cta-box::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: -1;
     width: 400px;
     height: 400px;
     bottom: -200px;
     right: -100px;
 }
 
+/* Large title inside the CTA banner */
 .cta-box h2 {
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 16px;
 }
 
+/* Paragraph explaining the call to action */
 .cta-box p {
     font-size: 1.1rem;
     opacity: 0.9;
     margin-bottom: 32px;
     max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
+/* Horizontal group for action buttons */
 .cta-buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
 }
 
+/* Base button styling for CTA area */
 .btn-cta {
     padding: 12px 32px;
     border-radius: 8px;
@@ -183,35 +192,40 @@ body {
     transition: all 0.3s ease;
 }
 
+/* White background primary button */
 .btn-cta.primary {
-    background: var(--white);
-    color: var(--primary);
+    background-color: #ffffff;
+    color: #cf6317;
 }
 
+/* Ghost style secondary button */
 .btn-cta.secondary {
-    background: transparent;
-    color: var(--white);
+    background-color: transparent;
+    color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Brighten primary button on hover */
 .btn-cta.primary:hover {
-    background: var(--background-light);
+    background-color: #f8f7f6;
     transform: translateY(-3px);
 }
 
+/* Fill secondary button on hover */
 .btn-cta.secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
-    border-color: var(--white);
+    border-color: #ffffff;
 }
 
-/* Responsive */
+/* Switch to two columns on tablet view */
 @media (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Single column stack for mobile devices */
 @media (max-width: 768px) {
     .services-hero h1 {
         font-size: 2.5rem;
@@ -225,11 +239,13 @@ body {
         font-size: 2rem;
     }
 
+    /* Stack buttons vertically on small screens */
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Fixed width for buttons on mobile */
     .btn-cta {
         width: 100%;
         max-width: 280px;
