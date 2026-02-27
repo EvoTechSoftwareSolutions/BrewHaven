@@ -4,97 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Brew Haven</title>
-    <meta name="description" content="Get in touch with Brew Haven — we'd love to hear from you.">
+    <title>Contact Us | Brew Haven</title>
+    <meta name="description" content="Reach out to Brew Haven. We'd love to hear from you.">
     <link rel="icon" href="../_resources/common/logo.png" type="image/png">
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Work+Sans:wght@300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../_components/header.css">
     <link rel="stylesheet" href="../_components/footer.css">
-    <link rel="stylesheet" href="../home/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        :root {
-            --primary: #D17842;
-            --primary-dark: #b5612e;
-            --dark: #1a1a1a;
-            --gray: #777;
-            --gray-light: #aaa;
-            --light: #f9f9f9;
-            --border: #e8e8e8;
-        }
-
-        body {
-            background: #fafafa;
-        }
-
-        .page-coming {
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .page-coming span {
-            display: inline-block;
-            background: #FFF2EB;
-            color: var(--primary);
-            font-weight: 700;
-            letter-spacing: 3px;
-            font-size: 0.85rem;
-            padding: 8px 20px;
-            border-radius: 50px;
-            margin-bottom: 24px;
-        }
-
-        .page-coming h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: var(--dark);
-            margin-bottom: 16px;
-        }
-
-        .page-coming p {
-            color: var(--gray);
-            font-size: 1.1rem;
-            max-width: 500px;
-            line-height: 1.7;
-        }
-
-        .contact-info {
-            margin-top: 40px;
-            display: flex;
-            gap: 40px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .contact-info-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--gray);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 0.95rem;
-        }
-
-        .contact-info-item i {
-            width: 42px;
-            height: 42px;
-            background: #FFF2EB;
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -129,25 +48,111 @@
     </div>
 
     <main>
-        <div class="page-coming">
-            <span>REACH OUT</span>
-            <h1>Contact Us</h1>
-            <p>We're always happy to hear from you. Find us in-store or reach out through any of the channels below.</p>
-            <div class="contact-info">
-                <div class="contact-info-item">
-                    <i class="fas fa-location-dot"></i>
-                    <span>123 Brew Lane, Portland, OR</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fas fa-phone"></i>
-                    <span>555-0199</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>hello@brewhaven.com</span>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container relative">
+                <span class="hero-tag">GET IN TOUCH</span>
+                <h1>Let's Brew Something <br><span>Together</span></h1>
+                <p>We'd love to hear from you. Whether you're curious about our signature beverages, want to partner
+                    with us, or just want to talk about the art of the perfect brew, our team is ready to connect.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content Section -->
+        <section class="contact-section">
+            <div class="container mt-20">
+                <div class="contact-grid">
+                    <!-- Left: Contact Form -->
+                    <div class="contact-form-side">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" placeholder="hello@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="How can we help?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Tell us more about your inquiry..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn-send">Send Message <i
+                                    class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Right: Direct Info -->
+                    <div class="contact-info-side">
+                        <div class="info-header">
+                            <div class="header-divider"></div>
+                            <h3>Reach Us Directly</h3>
+                        </div>
+
+                        <div class="direct-info-list">
+                            <div class="direct-item">
+                                <div class="item-icon"><i class="fas fa-location-dot"></i></div>
+                                <div class="item-text">
+                                    <h4>Visit our Flagship Shop</h4>
+                                    <p>123 Beverage Lane, Brew Valley, CA 90210</p>
+                                </div>
+                            </div>
+
+                            <div class="direct-item">
+                                <div class="item-icon"><i class="fas fa-phone"></i></div>
+                                <div class="item-text">
+                                    <h4>Give us a call</h4>
+                                    <p>(555) 123-4567<br><span>MON-FRI, 8AM - 6PM</span></p>
+                                </div>
+                            </div>
+
+                            <div class="direct-item">
+                                <div class="item-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="item-text">
+                                    <h4>Email our team</h4>
+                                    <p><a href="mailto:hello@brewhaven.com">hello@brewhaven.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wholesale-box">
+                            <h4>Wholesale Inquiries?</h4>
+                            <p>Looking to serve Brew Haven beverages in your shop, office, or restaurant? We offer
+                                specialized bulk rates and beverage program training.</p>
+                            <a href="#" class="wholesale-link">Learn About Wholesale →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section mt-24">
+            <div class="container no-padding">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178788.0827179659!2d-122.827299!3d45.542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b0b7da97427%3A0x1c36b9f6f6f18591!2sPortland%2C%20OR!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-overlay"></div>
+                    <div class="map-marker">
+                        <div class="marker-icon"><i class="fas fa-mug-hot"></i></div>
+                        <div class="marker-label">
+                            <strong>Brew Haven</strong>
+                            <span>Roastery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -157,7 +162,8 @@
                     <img src="../_resources/common/logo.png" alt="Brew Haven Logo">
                     <span>Brew Haven</span>
                 </div>
-                <p>Crafting the perfect cup since 2018. Your local sanctuary for coffee lovers and dreamers alike.</p>
+                <p>Dedicated to the art of fine
+                    beverages and the community that drinks them. Visit us for a daily dose of serenity.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -177,15 +183,15 @@
             <div class="footer-links-col">
                 <h4>CONTACT US</h4>
                 <ul class="contact-list">
-                    <li><i class="fas fa-location-dot"></i> 123 Brew Lane, Portland, OR</li>
+                    <li><i class="fas fa-location-dot"></i> 123 Brew Lane, Coffee District Portland, OR 97201</li>
                     <li><i class="fas fa-phone"></i> 555-0199</li>
                     <li><i class="fas fa-envelope"></i> hello@brewhaven.com</li>
                 </ul>
             </div>
             <div class="footer-links-col">
                 <h4>NEWSLETTER</h4>
-                <p>Subscribe for exclusive offers.</p>
                 <form class="newsletter-form">
+                    <p>Subscribe for exclusive offers and coffee tips.</p>
                     <input type="email" placeholder="Your email address">
                     <button type="submit" class="btn-subscribe">Subscribe</button>
                 </form>
@@ -196,6 +202,7 @@
             <div class="footer-legal">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
+                <a href="#">Cookies</a>
             </div>
         </div>
     </footer>
@@ -206,6 +213,13 @@
         menu.addEventListener('click', function () {
             menu.classList.toggle('is-active');
             menuLinks.classList.toggle('active');
+        });
+
+        // Simple form submission feedback
+        document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent to the Brew Haven team.');
+            this.reset();
         });
     </script>
 </body>
