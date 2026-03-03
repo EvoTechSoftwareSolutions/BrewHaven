@@ -711,6 +711,7 @@ h3 {
 
     .hero-subtitle {
         padding-left: 80px;
+        margin-top: -10px;
         margin-bottom: 35px;
         font-size: 0.8rem;
     }
@@ -721,6 +722,7 @@ h3 {
         max-width: 100%;
         gap: 12px;
         justify-content: flex-start;
+        padding-bottom: 30px;
     }
 
     .hero .btn {
