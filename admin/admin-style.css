@@ -1,0 +1,253 @@
+/* Brew Haven Admin Stylesheet */
+/* This file handles the layout for the admin dashboard on all devices */
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #2c1e1a;
+}
+
+/* Navigation Header */
+.header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.header span {
+    color: #D1641E;
+}
+
+/* Page Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.welcome-msg {
+    margin-bottom: 30px;
+}
+
+.welcome-msg h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.welcome-msg p {
+    color: #777;
+    margin: 0;
+}
+
+/* Data Sections (Cards) */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Table Management */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th {
+    text-align: left;
+    padding: 15px;
+    background-color: #fcfcfc;
+    border-bottom: 2px solid #eee;
+    color: #888;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* UI Components */
+.badge {
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.badge-email {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+.badge-date {
+    background-color: #f1f8e9;
+    color: #33691e;
+}
+
+.message-text {
+    color: #555;
+    line-height: 1.5;
+    max-width: 400px;
+    word-break: break-word;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Tablet Optimization (below 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+/* Mobile Optimization (below 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 15px auto;
+        padding: 0 15px;
+    }
+
+    .welcome-msg h2 {
+        font-size: 22px;
+    }
+
+    /* Transform Table into Cards for small screens */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background: #fcfcfc;
+        padding: 10px;
+    }
+
+    td {
+        border: none !important;
+        position: relative;
+        padding-left: 50% !important;
+        text-align: right;
+        min-height: 35px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+
+    td:before {
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 700;
+        color: #888;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    /* Column Labels for Contact Form Table */
+    .contact-table td:nth-of-type(1):before {
+        content: "Date";
+    }
+
+    .contact-table td:nth-of-type(2):before {
+        content: "From";
+    }
+
+    .contact-table td:nth-of-type(3):before {
+        content: "Subject";
+    }
+
+    .contact-table td:nth-of-type(4):before {
+        content: "Message";
+    }
+
+    /* Column Labels for Newsletter Table */
+    .newsletter-table td:nth-of-type(1):before {
+        content: "Email";
+    }
+
+    .newsletter-table td:nth-of-type(2):before {
+        content: "Date";
+    }
+
+    .message-text {
+        max-width: 100%;
+        text-align: right;
+    }
+}

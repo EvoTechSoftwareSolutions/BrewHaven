@@ -726,36 +726,30 @@
         scroll-snap-align: start;
     }
 
-    /* Convert juice list to slider */
+    /* Convert juice list to a vertical stack ('downward') */
     .m-juice-list {
         display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 12px;
-        padding-bottom: 8px;
+        flex-direction: column;
+        gap: 16px;
     }
 
-    /* Hide slider scrollbar */
-    .m-juice-list::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Juice item sizing for horizontal slider view */
+    /* Juice item sizing for vertical stack */
     .m-juice {
-        flex: 0 0 82vw;
-        max-width: 300px;
-        scroll-snap-align: start;
+        width: 100%;
+        flex-direction: row !important;
+        /* Internal row layout */
+        text-align: left !important;
     }
 
-    /* Health category card sizing adjustments */
+    /* Keep Wellness Blends as a 2-column grid on small screens */
     .m-wellness-grid {
-        grid-template-columns: 1fr;
-        max-width: 50%;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        gap: 10px;
     }
 
     .m-wellness {
-        height: 140px;
+        height: 120px;
     }
 
     /* Tighter section margins on smaller screens */

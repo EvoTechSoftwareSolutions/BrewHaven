@@ -404,10 +404,14 @@
             </div>
             <div class="footer-links-col">
                 <h4>NEWSLETTER</h4>
-                <form class="newsletter-form">
+                <form id="newsletterForm" class="newsletter-form" action="../php/newsletter-handler.php">
                     <p>Subscribe for exclusive offers and coffee tips.</p>
-                    <input type="email" placeholder="Your email address">
+                    <div class="newsletter-input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Your email address" required>
+                    </div>
                     <button type="submit" class="btn-subscribe">Subscribe</button>
+                    <div id="newsletterStatus" class="form-status"></div>
                 </form>
             </div>
         </div>
@@ -421,6 +425,7 @@
         </div>
     </footer>
 
+    <script src="../_resources/common/newsletter.js"></script>
     <script src="menu.js"></script>
 </body>
 

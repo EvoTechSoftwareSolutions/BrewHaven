@@ -93,3 +93,60 @@ function get_user_confirmation_content($name, $subject, $message) {
     </html>
     ";
 }
+
+// Function to generate the Welcome Newsletter HTML
+function get_newsletter_welcome_content($email) {
+    return "
+    <html>
+    <head>
+        <style>
+            body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fdfaf8; margin: 0; padding: 0; }
+            .wrapper { padding: 40px 20px; }
+            .card { max-width: 550px; margin: 0 auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 35px rgba(212, 163, 115, 0.15); }
+            .banner { background-color: #1a1a1a; padding: 30px; text-align: center; }
+            .banner h1 { color: #d4a373; margin: 0; font-size: 28px; letter-spacing: 2px; text-transform: uppercase; font-weight: 300; }
+            .banner p { color: #fff; margin: 10px 0 0; font-size: 14px; opacity: 0.8; }
+            .body { padding: 40px; color: #444; }
+            .body h2 { color: #1a1a1a; font-size: 20px; margin-top: 0; }
+            .perk-list { margin: 25px 0; padding: 0; list-style: none; }
+            .perk-item { padding: 12px 15px; background: #fdfaf8; border-radius: 8px; margin-bottom: 10px; display: flex; align-items: center; font-size: 14px; }
+            .perk-item span { margin-right: 15px; font-size: 18px; }
+            .cta { text-align: center; margin-top: 30px; }
+            .btn { display: inline-block; background-color: #d4a373; color: #fff !important; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 14px; }
+            .footer { background: #fafafa; padding: 25px; text-align: center; font-size: 12px; color: #aaa; border-top: 1px solid #f0f0f0; }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='card'>
+                <div class='banner'>
+                    <h1>Brew Haven</h1>
+                    <p>WELCOME TO THE INNER CIRCLE</p>
+                </div>
+                <div class='body'>
+                    <h2>Hello there!</h2>
+                    <p>Thank you for subscribing to our newsletter. You're now on the exclusive list to receive our latest coffee stories, brewing secrets, and seasonal offers.</p>
+                    
+                    <p><strong>As an insider, here's what you'll get:</strong></p>
+                    <div class='perk-list'>
+                        <div class='perk-item'> First access to limited-edition roasts</div>
+                        <div class='perk-item'> Invitations to private tasting events</div>
+                        <div class='perk-item'> Monthly brewing tips from our master baristas</div>
+                    </div>
+
+                    <p>Stay tuned! Your first brew update is already being roasted and will arrive in your inbox soon.</p>
+                    
+                    <div class='cta'>
+                        <a href='http://localhost/BrewHaven/home/home.html' class='btn'>Explore Brew Haven</a>
+                    </div>
+                </div>
+                <div class='footer'>
+                    You received this because you signed up at brewhaven.com.<br>
+                    &copy; 2026 Brew Haven. 123 Beverage Lane, Brew Valley, CA 90210.
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    ";
+}
