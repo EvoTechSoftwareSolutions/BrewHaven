@@ -4,6 +4,7 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #1a1a1a;
     margin: 0;
+    padding-top: 98px !important;
 }
 
 /* Centered content wrapper with side padding */
@@ -67,8 +68,8 @@ body {
 
 /* Section for the brand narrative content */
 .about-story {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Side-by-side grid for story text and image */
@@ -82,7 +83,7 @@ body {
 /* Brand story headline style */
 .story-text h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-bottom: 25px;
     line-height: 1.1;
     font-weight: 800;
@@ -94,7 +95,7 @@ body {
     color: #777777;
     line-height: 1.9;
     margin-bottom: 24px;
-    font-size: 0.85rem;
+    /* font-size: 0.85rem; */
 }
 
 /* Link with arrow and hover effect */
@@ -140,7 +141,7 @@ body {
 /* Dark section for quotes and achievement statistics */
 .about-quote-stats {
     background-color: #14110F;
-    padding: 120px 0;
+    padding: 80px 0;
     color: #ffffff;
     text-align: center;
 }
@@ -157,7 +158,7 @@ body {
 /* Big mission statement headline */
 .about-quote-stats h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     max-width: 1000px;
     margin: 0 auto 10px;
     line-height: 1.2;
@@ -244,7 +245,7 @@ body {
 /* Dark section explaining core company values */
 .about-values {
     background-color: #14110F;
-    padding: 120px 0;
+    padding: 80px 0;
     color: #ffffff;
     text-align: center;
 }
@@ -252,7 +253,7 @@ body {
 /* Main title for the values section */
 .about-values h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 80px;
     font-weight: 800;
 }
@@ -318,7 +319,7 @@ body {
 
 /* Section focusing on sourcing and harvest process */
 .about-harvest {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 /* Grid layout for harvest section description and image */
@@ -345,7 +346,7 @@ body {
 /* Large headline for processing/harvesting */
 .harvest-text h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-bottom: 30px;
     font-weight: 900;
     line-height: 1;
@@ -393,7 +394,7 @@ body {
 
 /* Main segment for interior/sanctuary display */
 .about-sanctuary {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 /* Layout for sanctuary text and internal photo grid */
@@ -449,7 +450,7 @@ body {
 /* Bold headline for the shop interior section */
 .sanctuary-text h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-bottom: 30px;
     font-weight: 900;
     line-height: 1.1;
@@ -537,13 +538,19 @@ body {
 }
 
 /* Collapse grid sections to single column for tablet */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
 
-    .story-grid,
     .harvest-grid,
     .sanctuary-grid {
         grid-template-columns: 1fr;
         gap: 50px;
+    }
+
+    .story-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 60px;
+        align-items: center;
     }
 
     .story-image {
@@ -555,9 +562,38 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* Match styling from reference image */
+    .story-text .section-tag {
+        display: none;
+    }
+
+    .story-text {
+        text-align: left;
+    }
+
+    .story-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .story-text p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #666;
+    }
+
     /* Add padding to section tags for better spacing on tablet */
     .section-tag {
         padding-top: 20px;
+    }
+
+    .about-hero-content .section-tag {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 40px;
+        /* Minor clearance for tablet */
     }
 }
 
@@ -569,8 +605,69 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .story-text {
+        text-align: center;
+    }
+
+    .story-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .story-image img {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .harvest-text,
+    .sanctuary-text {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .harvest-text h2,
+    .sanctuary-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .harvest-text p,
+    .sanctuary-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .harvest-list {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .sanctuary-feature {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .img-light {
+        margin-top: 0;
+    }
+
     .about-hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .about-hero-content .section-tag {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 40px;
+        /* Add some space from the top for mobile header clearance */
     }
 
     .container {
@@ -578,8 +675,7 @@ body {
         padding-right: 20px;
     }
 
-    /* Add padding to section tags for better spacing on mobile */
     .section-tag {
-        padding-top: 20px;
+        padding-top: 50px;
     }
 }

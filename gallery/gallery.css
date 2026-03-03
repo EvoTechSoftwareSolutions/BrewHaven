@@ -3,7 +3,7 @@ body {
     background-color: #ffffff;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #1a1a1a;
-    /* Removed padding: 0 to allow global header-spacing to work */
+    padding-top: 98px !important;
 }
 
 /* Centered container with side padding */
@@ -15,14 +15,14 @@ body {
 
 /* Header section for gallery page title */
 .gallery-hero {
-    padding: 120px 0 60px;
+    padding: 80px 0 40px;
     text-align: left;
 }
 
 /* Main title of the gallery page */
 .gallery-hero h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 24px;
     font-weight: 900;
     color: #1a1a1a;
@@ -47,7 +47,7 @@ body {
 
 /* Container for gallery filtering controls */
 .gallery-filters {
-    padding: 20px 0 60px;
+    padding: 10px 0 40px;
 }
 
 /* Centered row of filter buttons */
@@ -90,7 +90,7 @@ body {
 
 /* Main section for the gallery image grid */
 .gallery-grid-section {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 /* Three-column grid layout for photos */
@@ -130,7 +130,7 @@ body {
 
 /* Background section for the page foot CTA */
 .gallery-cta {
-    padding: 80px 0;
+    padding: 50px 0;
     background-color: #fdfdfd;
 }
 
@@ -147,7 +147,7 @@ body {
 /* Section title for the CTA card */
 .cta-card h2 {
     font-family: 'Work Sans', serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 15px;
     font-weight: 800;
 }
@@ -208,8 +208,8 @@ body {
     /* Center the hero text for tablet and ensure it's below fixed header */
     .gallery-hero {
         text-align: center;
-        padding-top: 120px;
-        padding-bottom: 40px;
+        padding-top: 80px;
+        padding-bottom: 30px;
     }
 
     /* Keep the three-column layout from desktop */
@@ -233,8 +233,8 @@ body {
     /* Center the hero headline and description with extra top clearance */
     .gallery-hero {
         text-align: center;
-        padding-top: 120px;
-        padding-bottom: 30px;
+        padding-top: 80px;
+        padding-bottom: 25px;
     }
 
     .gallery-hero p {

@@ -333,6 +333,12 @@
         grid-column: 2 / 3;
         grid-row: 2;
     }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /* Mobile stack with side-by-side links */
@@ -489,10 +495,11 @@
 
     /* Legal info centered at bottom */
     .footer-bottom {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         column-gap: 20px;
-        row-gap: 20px;
-        text-align: center;
+        row-gap: 15px;
         margin-top: 50px;
         padding-top: 25px;
     }
@@ -554,4 +561,13 @@
     background-color: #fef2f2;
     color: #991b1b;
     border: 1px solid #fecaca;
+}
+
+/* Stack footer bottom on very small mobile screens */
+@media (max-width: 480px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
 }
