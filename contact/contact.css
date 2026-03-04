@@ -57,7 +57,7 @@ body {
 /* Large headline on the contact page */
 .contact-hero h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     font-weight: 900;
     margin-bottom: 30px;
     color: #181411;
@@ -202,7 +202,7 @@ body {
 
 /* Title for sidebar info blocks */
 .info-header h3 {
-    font-size: 1.8rem;
+    font-size: 1.55rem;
     font-weight: 900;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -397,18 +397,22 @@ body {
     }
 
     .contact-hero h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 
 /* Reflow input fields to single column on mobile */
 @media (max-width: 768px) {
+    body {
+        padding-top: 65px !important;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
 
     .contact-hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.55rem;
     }
 
     .contact-hero p {

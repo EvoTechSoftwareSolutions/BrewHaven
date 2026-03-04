@@ -30,7 +30,7 @@ h3 {
 /* Descriptive section heading style */
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 1.85rem;
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
@@ -135,7 +135,7 @@ h3 {
     border-top: 2px solid rgba(255, 255, 255, 0.4);
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     border-left: 2px solid rgba(255, 255, 255, 0.4);
-    border-right: 255px solid rgba(255, 255, 255, 0.4);
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(8px);
 }
 
@@ -242,8 +242,8 @@ h3 {
 
 /* Large main headline in hero */
 .hero h1 {
-    font-size: 100px;
-    line-height: 0.9;
+    font-size: 90px;
+    line-height: 0.8;
     font-weight: 500;
     margin-top: 0px;
     margin-bottom: 30px;
@@ -567,7 +567,7 @@ h3 {
 
 .grid-2-custom .section-title {
     text-transform: none;
-    font-size: 4rem;
+    font-size: 2.6rem;
 }
 
 .community-desc {
@@ -682,7 +682,7 @@ h3 {
     }
 
     .hero h1 {
-        font-size: 80px;
+        font-size: 68px;
     }
 
     .hero-subtitle-wrapper {
@@ -713,11 +713,11 @@ h3 {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.45rem;
     }
 
     .grid-2-custom .section-title {
-        font-size: 2.1rem;
+        font-size: 1.65rem;
     }
 
     /* Add padding to section tags for better spacing on large tablets */
@@ -778,14 +778,18 @@ h3 {
     }
 
     .hero h1 {
-        font-size: 60px;
+        font-size: 50px;
         margin-bottom: 25px;
     }
 
     .hero-subtitle-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
         padding-left: 0px;
         margin-top: -10px;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     .hero-line {
@@ -793,7 +797,8 @@ h3 {
     }
 
     .hero-subtitle {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        margin: 0;
     }
 
     .hero-btns {
@@ -912,7 +917,7 @@ h3 {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.45rem;
     }
 
     /* Add padding to section tags for better spacing on handheld/mobile */
@@ -921,7 +926,7 @@ h3 {
     }
 
     .grid-2-custom .section-title {
-        font-size: 2.2rem;
+        font-size: 1.55rem;
     }
 
     .card-title-row h3 {
@@ -982,13 +987,22 @@ h3 {
     }
 
     .hero h1 {
-        font-size: 38px;
-        line-height: 1;
+        font-size: 32px;
+        line-height: 1.1;
     }
 
     .hero-subtitle {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
+        margin-bottom: 0px;
+    }
+
+    .hero-subtitle-wrapper {
+        gap: 10px;
         margin-bottom: 25px;
+    }
+
+    .hero-line {
+        width: 40px;
     }
 
     .hero-btns {
@@ -1010,11 +1024,11 @@ h3 {
     }
 
     .section-title {
-        font-size: 1.6rem;
+        font-size: 1.25rem;
     }
 
     .grid-2-custom .section-title {
-        font-size: 2rem;
+        font-size: 1.45rem;
     }
 
     .card-title-row h3 {

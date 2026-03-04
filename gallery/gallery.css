@@ -22,7 +22,7 @@ body {
 /* Main title of the gallery page */
 .gallery-hero h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin-bottom: 24px;
     font-weight: 900;
     color: #1a1a1a;
@@ -147,7 +147,7 @@ body {
 /* Section title for the CTA card */
 .cta-card h2 {
     font-family: 'Work Sans', serif;
-    font-size: 2.2rem;
+    font-size: 1.85rem;
     margin-bottom: 15px;
     font-weight: 800;
 }
@@ -229,6 +229,9 @@ body {
 
 /* Mobile refinements (ensuring topics are seen) */
 @media (max-width: 768px) {
+    body {
+        padding-top: 65px !important;
+    }
 
     /* Center the hero headline and description with extra top clearance */
     .gallery-hero {
@@ -244,7 +247,7 @@ body {
 
     /* Maintain a readable title font size */
     .gallery-hero h1 {
-        font-size: 2.1rem;
+        font-size: 1.75rem;
         margin-top: 0px;
         margin-bottom: 15px;
     }
@@ -252,7 +255,7 @@ body {
     /* Make the topics (filters) sticky so they aren't missed */
     .gallery-filters {
         position: sticky;
-        top: 98px;
+        top: 65px;
         z-index: 500;
         background-color: #ffffff;
         padding-top: 15px;

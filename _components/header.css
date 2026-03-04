@@ -149,6 +149,29 @@ header.navbar {
         position: static;
     }
 
+    header.navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+        margin-right: 8px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .logo-slogan {
+        font-size: 8px;
+    }
+
+    body {
+        padding-top: 65px !important;
+    }
+
     .menu-toggle {
         display: flex;
     }

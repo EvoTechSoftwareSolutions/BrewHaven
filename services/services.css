@@ -22,7 +22,7 @@ body {
 
 /* Page headline with extra weight */
 .services-hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 900;
     margin-bottom: 16px;
     color: #181411;
@@ -160,7 +160,7 @@ body {
 
 /* Large title inside the CTA banner */
 .cta-box h2 {
-    font-size: 2.2rem;
+    font-size: 1.85rem;
     font-weight: 900;
     margin-bottom: 16px;
 }
@@ -226,8 +226,12 @@ body {
 
 /* Single column stack for mobile devices */
 @media (max-width: 768px) {
+    body {
+        padding-top: 65px !important;
+    }
+
     .services-hero h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .services-grid {
@@ -235,7 +239,7 @@ body {
     }
 
     .cta-box h2 {
-        font-size: 1.8rem;
+        font-size: 1.55rem;
     }
 
     /* Stack buttons vertically on small screens */
